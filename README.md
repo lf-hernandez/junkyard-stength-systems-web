@@ -1,1 +1,3 @@
-# junkyard-strength-systems
+# Junkyard Strength Systems 
+
+Web client for Junkyard Strength Systems
