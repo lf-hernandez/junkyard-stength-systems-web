@@ -18,10 +18,10 @@
 </style>
 
 <script lang="ts">
-import Vue from "vue";
-import { Component } from "vue-property-decorator";
+import Vue from 'vue';
+import { Component } from 'vue-property-decorator';
 
-import Navbar from "@/views/shared/Navbar.vue";
+import Navbar from '@/views/shared/layout/Navbar.vue';
 
 @Component({
   components: {

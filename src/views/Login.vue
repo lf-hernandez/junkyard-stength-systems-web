@@ -7,10 +7,10 @@
 </template>
 
 <script lang='ts'>
-import Vue from "vue";
-import { Component } from "vue-property-decorator";
+import Vue from 'vue';
+import { Component } from 'vue-property-decorator';
 
-import LoginForm from "@/components/Login/LoginForm.vue";
+import LoginForm from '@/components/login/LoginForm.vue';
 
 @Component({
   components: {

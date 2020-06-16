@@ -2,7 +2,7 @@
   <div class="Navbar">
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
       <div class="container">
-        <router-link class="navbar-brand" to="/">JSS</router-link>
+        <router-link class="navbar-brand" to="/">Logo</router-link>
 
         <button
           class="navbar-toggler"

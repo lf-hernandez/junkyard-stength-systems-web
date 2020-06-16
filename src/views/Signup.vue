@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row">
         <div class="col">
-          <h3>Join the JSS Community</h3>
+          <h3>Join the Community</h3>
 
           <ul class="text-left mt-4">
             <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
@@ -22,10 +22,10 @@
 </template>
 
 <script lang='ts'>
-import Vue from "vue";
-import { Component } from "vue-property-decorator";
+import Vue from 'vue';
+import { Component } from 'vue-property-decorator';
 
-import SignupForm from "@/components/Signup/SignupForm.vue";
+import SignupForm from '@/components/signup/SignupForm.vue';
 
 @Component({
   components: {
