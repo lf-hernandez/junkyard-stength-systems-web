@@ -5,7 +5,9 @@
         <header>
             <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
                 <div class="container">
-                    <router-link class="navbar-brand" to="/">Logo</router-link>
+                    <router-link class="navbar-brand" to="/">
+                        <img id="logo" src="../../../assets/logo.svg" alt="">
+                    </router-link>
 
                     <button
                             class="navbar-toggler"
