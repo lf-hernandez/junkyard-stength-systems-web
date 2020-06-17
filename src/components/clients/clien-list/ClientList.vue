@@ -4,9 +4,8 @@
     <div class="clientList">
         <ClientCard
                 v-for="client in clients"
-                :key="client.name"
-                :name="client.Name"
-                :weekNumber="client.WeekNumber"
+                :key="client.Id"
+                :client="client"
                 class="mb-4 shadow-sm rounded"
         ></ClientCard>
     </div>

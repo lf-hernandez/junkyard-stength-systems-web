@@ -11,27 +11,54 @@ import ClientCard from '@/components/clients/client-card/ClientCard.vue';
 export default class ClientList extends Vue {
     clients = [
         {
-            Name: 'Simon Bolivar',
-            WeekNumber: '7'
+            Id: 0,
+            FirstName: 'Simon',
+            LastName: 'Bolivar',
+            WeekNumber: '7',
+            Email: 'test@gmail.com',
+            LastCheckIn: '06/01/2020',
+            Phone: '(555) 555-5555'
         },
         {
-            Name: 'Selina Kyle',
+            Id: 1,
+            FirstName: 'Selina',
+            LastName: 'Kyle',
             WeekNumber: '3'
         },
         {
-            Name: 'Thor Odinson',
-            WeekNumber: '10'
+            Id: 2,
+            FirstName: 'Thor',
+            LastName: 'Odinson',
+            WeekNumber: '10',
+            Email: 'test@gmail.com',
+            LastCheckIn: '06/01/2020',
+            Phone: '(555) 555-5555'
         },
         {
-            Name: 'Lebron James',
-            WeekNumber: '2'
+            Id: 3,
+            FirstName: 'Lebron',
+            LastName: 'James',
+            WeekNumber: '2',
+            Email: 'test@gmail.com',
+            LastCheckIn: '06/01/2020',
+            Phone: '(555) 555-5555'
         }, {
-            Name: 'James Howlett',
-            WeekNumber: '17'
+            Id: 4,
+            FirstName: 'James',
+            LastName: 'Howlett',
+            WeekNumber: '17',
+            Email: 'test@gmail.com',
+            LastCheckIn: '06/01/2020',
+            Phone: '(555) 555-5555'
         },
         {
-            Name: 'Wade Wilson',
-            WeekNumber: '32'
+            Id: 5,
+            FirstName: 'Wade',
+            LastName: 'Wilson',
+            WeekNumber: '32',
+            Email: 'test@gmail.com',
+            LastCheckIn: '06/01/2020',
+            Phone: '(555) 555-5555'
         }
 
     ];
