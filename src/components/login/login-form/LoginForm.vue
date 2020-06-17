@@ -1,13 +1,10 @@
+<script lang="ts" src="./LoginForm.ts"></script>
+
 <template>
-  <div class="signupForm">
+  <div class="loginForm">
     <div class="card">
       <div class="card-body text-left">
         <form>
-          <div class="form-group">
-            <label for="userName">Userame</label>
-            <input type="text" class="form-control" id="userName" aria-describedby="userNam" />
-          </div>
-          
           <div class="form-group">
             <label for="email">Email</label>
             <input type="email" class="form-control" id="email" aria-describedby="email" />
@@ -18,17 +15,10 @@
             <input type="password" class="form-control" id="password" />
           </div>
 
-          <button type="submit" class="mt-5 btn btn-block btn-primary">Sign Up</button>
+          <button type="submit" class="mt-5 btn btn-block btn-primary">Login</button>
         </form>
       </div>
     </div>
   </div>
-</template>    
+</template>
 
-<script lang="ts">
-import Vue from 'vue';
-import { Component } from 'vue-property-decorator';
-
-@Component
-export default class SignupForm extends Vue {}
-</script>  

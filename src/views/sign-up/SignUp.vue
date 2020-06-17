@@ -1,5 +1,7 @@
+<script lang="ts" src="./SignUp.ts"></script>
+
 <template>
-  <div class="Signup">
+  <div class="signUp">
     <div class="container">
       <div class="row">
         <div class="col">
@@ -21,16 +23,3 @@
   </div>
 </template>
 
-<script lang='ts'>
-import Vue from 'vue';
-import { Component } from 'vue-property-decorator';
-
-import SignupForm from '@/components/signup/SignupForm.vue';
-
-@Component({
-  components: {
-    SignupForm
-  }
-})
-export default class Signup extends Vue {}
-</script>

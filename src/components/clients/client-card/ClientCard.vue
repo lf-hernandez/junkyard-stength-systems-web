@@ -1,5 +1,8 @@
+<script lang="ts" src="./ClientCard.ts"></script>
+<style lang="scss" src="./ClientCard.scss"></style>
+
 <template>
-    <div class="ClientCard">
+    <div class="clientCard">
         <div class="card">
             <div class="d-flex align-items-center">
                 <div class="d-flex-shrink">
@@ -23,34 +26,3 @@
         </div>
     </div>
 </template>
-
-<script lang="ts">
-    import Vue from 'vue';
-    import {Component, Prop} from 'vue-property-decorator';
-
-    @Component
-    export default class ClientCard extends Vue {
-        @Prop()
-        name: string;
-
-        @Prop()
-        weekNumber: number
-
-        get initials() {
-            return this.name.split('')[0].toUpperCase();
-        }
-
-
-    }
-</script>
-
-<style lang="scss">
-    @import "src/styles/style.scss";
-
-    * {
-        font-family: $font-family-roboto;
-    }
-    .avatar-circle {
-        @include md-avatar(70px);
-    }
-</style>

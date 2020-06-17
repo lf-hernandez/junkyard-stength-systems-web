@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import VueRouter, { RouteConfig } from 'vue-router'
 
-import Home from '../views/Home.vue'
+import Home from '../views/home/Home.vue'
 
 Vue.use(VueRouter)
 
@@ -14,27 +14,27 @@ Vue.use(VueRouter)
   {
     path: '/login',
     name: 'login',
-    component: () => import(/* webpackChunkName: "auth" */ '../views/Login.vue')
+    component: () => import(/* webpackChunkName: "auth" */ '../views/login/Login.vue')
   },
   {
-    path: '/signup',
+    path: '/sign-up',
     name: 'signup',
-    component: () => import(/* webpackChunkName: "auth" */ '../views/Signup.vue')
+    component: () => import(/* webpackChunkName: "auth" */ '../views/sign-up/SignUp.vue')
   },
     {
     path: '/clients',
     name: 'clients',
-    component: () => import(/* webpackChunkName: "clients" */ '../views/Clients.vue')
+    component: () => import(/* webpackChunkName: "clients" */ '../views/clients/Clients.vue')
   },
     {
     path: '/exercise-library',
     name: 'exercise-library',
-    component: () => import(/* webpackChunkName: "exercise-library" */ '../views/ExerciseLibrary.vue')
+    component: () => import(/* webpackChunkName: "exercise-library" */ '../views/exercise-library/ExerciseLibrary.vue')
   },
   {
     path: '/programs',
     name: 'programs',
-    component: () => import(/* webpackChunkName: "programs" */ '../views/Programs.vue')
+    component: () => import(/* webpackChunkName: "programs" */ '../views/programs/Programs.vue')
   },
   // {
   //   path: '/about',
@@ -76,15 +76,15 @@ Vue.use(VueRouter)
 //     res.send('add new exercise');
 // })
 // router.get('/programs/:id', (req, res, next) => {
-//   res.send('program by id');
+//   res.send('programs by id');
 // });
 
 // router.get('programs/create', (req, res, next) => {
-//   res.send('create program');
+//   res.send('create programs');
 // });
 
 // router.get('programs/:id/edit', (req, res, next) => {
-//   res.send('edit program by id');
+//   res.send('edit programs by id');
 // })
 ]
 

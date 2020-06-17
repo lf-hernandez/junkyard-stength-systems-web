@@ -1,0 +1,8 @@
+@import "../../../styles/style";
+
+* {
+  font-family: $font-family-roboto;
+}
+.avatar-circle {
+  @include md-avatar(70px);
+}

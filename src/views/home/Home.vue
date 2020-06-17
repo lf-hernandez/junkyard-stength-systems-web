@@ -6,8 +6,4 @@
   </div>
 </template>
 
-<script>
-export default {
-
-}
-</script>
+<script lang="ts" src="./Home.ts"></script>

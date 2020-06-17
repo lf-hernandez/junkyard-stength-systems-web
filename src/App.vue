@@ -21,7 +21,7 @@
 import Vue from 'vue';
 import { Component } from 'vue-property-decorator';
 
-import Navbar from '@/views/shared/layout/Navbar.vue';
+import Navbar from '@/components/layout/nav-bar/NavBar.vue';
 
 @Component({
   components: {
