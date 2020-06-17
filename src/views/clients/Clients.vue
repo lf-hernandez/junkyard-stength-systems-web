@@ -5,7 +5,7 @@
         <div class="container">
             <h1 class="text-left font-weight-light m-0">Client Management</h1>
             <br><br>
-            <ClientListViewer></ClientListViewer>
+            <ClientList></ClientList>
         </div>
     </div>
 </template>
