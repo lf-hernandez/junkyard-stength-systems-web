@@ -1,49 +1,61 @@
-import Vue from 'vue'
-import VueRouter, { RouteConfig } from 'vue-router'
+import Vue from 'vue';
+import VueRouter, { RouteConfig } from 'vue-router';
 
-import Home from '../views/home/Home.vue'
+import Home from '../views/home/Home.vue';
 
-Vue.use(VueRouter)
+Vue.use(VueRouter);
 
-  const routes: Array<RouteConfig> = [
-  {
-    path: '/',
-    name: 'home',
-    component: Home
-  },
-  {
-    path: '/login',
-    name: 'login',
-    component: () => import(/* webpackChunkName: "auth" */ '../views/login/Login.vue')
-  },
-  {
-    path: '/sign-up',
-    name: 'signup',
-    component: () => import(/* webpackChunkName: "auth" */ '../views/sign-up/SignUp.vue')
-  },
+const routes: Array<RouteConfig> = [
     {
-    path: '/clients',
-    name: 'clients',
-    component: () => import(/* webpackChunkName: "clients" */ '../views/clients/Clients.vue')
-  },
+        path: '/',
+        name: 'home',
+        component: Home
+    },
     {
-    path: '/exercise-library',
-    name: 'exercise-library',
-    component: () => import(/* webpackChunkName: "exercise-library" */ '../views/exercise-library/ExerciseLibrary.vue')
-  },
-  {
-    path: '/programs',
-    name: 'programs',
-    component: () => import(/* webpackChunkName: "programs" */ '../views/programs/Programs.vue')
-  },
-  // {
-  //   path: '/about',
-  //   name: 'about',
-  //   // route level code-splitting
-  //   // this generates a separate chunk (about.[hash].js) for this route
-  //   // which is lazy-loaded when the route is visited.
-  //   component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
-  // },
+        path: '/login',
+        name: 'login',
+        component: () => import(/* webpackChunkName: "auth" */ '../views/login/Login.vue')
+    },
+    {
+        path: '/sign-up',
+        name: 'signup',
+        component: () => import(/* webpackChunkName: "auth" */ '../views/sign-up/SignUp.vue')
+    },
+    {
+        path: '/clients',
+        name: 'clients',
+        component: () => import(/* webpackChunkName: "clients" */ '../views/clients/Clients.vue')
+    },
+    {
+        path: '/clients/:clientId/client-details',
+        name: 'client-details.view',
+        props: true,
+        component: () => import(/* webpackChunkName: "client-details" */ '../views/client-details/ClientDetails.vue')
+    },
+    {
+        path: '/clients/:clientId/client-details/edit',
+        name: 'client-details.edit',
+        props: true,
+        component: () => import(/* webpackChunkName: "client-details" */ '../views/client-details/ClientDetails.vue')
+    },
+    {
+        path: '/exercise-library',
+        name: 'exercise-library',
+        component: () => import(/* webpackChunkName: "exercise-library" */ '../views/exercise-library/ExerciseLibrary.vue')
+    },
+    {
+        path: '/programs',
+        name: 'programs',
+        component: () => import(/* webpackChunkName: "programs" */ '../views/programs/Programs.vue')
+    }
+    // {
+    //   path: '/about',
+    //   name: 'about',
+    //   // route level code-splitting
+    //   // this generates a separate chunk (about.[hash].js) for this route
+    //   // which is lazy-loaded when the route is visited.
+    //   component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
+    // },
 //   router.get('/clients', (req, res, next) => {
 //     res.send('clients list');
 // });
@@ -86,12 +98,12 @@ Vue.use(VueRouter)
 // router.get('programs/:id/edit', (req, res, next) => {
 //   res.send('edit programs by id');
 // })
-]
+];
 
 const router = new VueRouter({
-  mode: 'history',
-  base: process.env.BASE_URL,
-  routes
-})
+    mode: 'history',
+    base: process.env.BASE_URL,
+    routes
+});
 
-export default router
+export default router;
