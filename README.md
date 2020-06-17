@@ -19,12 +19,12 @@ npm run serve
 npm run build
 ```
 
-### Run your unit tests
+### Run unit tests
 ```
 npm run test:unit
 ```
 
-### Run your end-to-end tests
+### Run end-to-end tests
 ```
 npm run test:e2e
 ```
@@ -33,6 +33,3 @@ npm run test:e2e
 ```
 npm run lint
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
