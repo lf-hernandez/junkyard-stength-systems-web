@@ -52,8 +52,15 @@ const routes: Array<RouteConfig> = [
         ]
     },
     {
-        path: '/exercise-details/:exercise-name',
-        name: 'exercise-details',
+        path: '/exercise-details/:exerciseName',
+        name: 'exercise-details.view',
+        props: true,
+        component: () => import(/* webpackChunkName: "exercise-details" */ '../views/exercise-details/ExerciseDetails.vue')
+
+    },
+    {
+        path: '/exercise-details/:exerciseName/edit',
+        name: 'exercise-details.edit',
         props: true,
         component: () => import(/* webpackChunkName: "exercise-details" */ '../views/exercise-details/ExerciseDetails.vue')
 
