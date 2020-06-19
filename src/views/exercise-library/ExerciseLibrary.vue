@@ -24,16 +24,7 @@
                     <div class="container">
                         <div class="row row-cols-1 row-cols-md-3">
                             <div class="col mb-5" v-for="exercise in exercises" :key="exercise.id">
-                                <div class="card exercise-card p-0">
-                                    <img src="../../assets/logo.svg" class="p-4 card-img-top exercise-img"
-                                         alt="placeholder">
-                                    <div class="card-header">
-                                        {{ exercise.name }}
-                                    </div>
-                                    <div class="card-body">
-                                        {{ exercise.description }}
-                                    </div>
-                                </div>
+                                <ExerciseLibraryCard v-on:click.native="onClick" :exercise="exercise"></ExerciseLibraryCard>
                             </div>
                         </div>
                     </div>

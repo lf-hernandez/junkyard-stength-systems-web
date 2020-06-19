@@ -2,10 +2,12 @@ import Vue from 'vue';
 import { Component } from 'vue-property-decorator';
 
 import ExerciseLibrarySideNav from '@/components/exercise-library/exercise-side-nav/ExerciseLibrarySideNav.vue';
+import ExerciseLibraryCard from '@/components/exercise-library/exercise-library-card/ExerciseLibraryCard.vue';
 
 @Component({
     components: {
-        ExerciseLibrarySideNav
+        ExerciseLibrarySideNav,
+        ExerciseLibraryCard
     }
 })
 export default class ExerciseLibrary extends Vue {
@@ -46,4 +48,8 @@ export default class ExerciseLibrary extends Vue {
             description: 'Description goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
         }
     ];
+
+    onClick() {
+        this.$router.push({ name: 'exercise-details'})
+    }
 }
