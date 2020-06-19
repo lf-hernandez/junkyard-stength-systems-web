@@ -1,0 +1,15 @@
+.exerciseLibrary {
+    .exercise-card:focus {
+        outline: 0;
+    }
+
+    .exercise-card:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .12), 0 1px 18px 0 rgba(0, 0, 0, .09), 0 3px 5px -1px rgba(0, 0, 0, .145);
+    }
+
+    .exercise-img {
+        background-color: black !important;
+        height: 150px;
+    }
+}
