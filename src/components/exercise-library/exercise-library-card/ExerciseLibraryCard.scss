@@ -1,0 +1,21 @@
+.exerciseLibraryCard {
+
+    .exerciseImg {
+        background-color: black !important;
+        height: 150px;
+    }
+}
+
+.exerciseLibraryCard:active {
+    cursor: pointer;
+    outline: 0;
+    background: rgba(8,110,170,.025);
+    fill: #212121;
+    color: #212121
+}
+
+.exerciseLibraryCard:hover {
+    cursor: pointer;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .12), 0 1px 18px 0 rgba(0, 0, 0, .09), 0 3px 5px -1px rgba(0, 0, 0, .145);
+}
