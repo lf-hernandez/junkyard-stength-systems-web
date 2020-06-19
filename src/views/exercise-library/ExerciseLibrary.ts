@@ -49,7 +49,7 @@ export default class ExerciseLibrary extends Vue {
         }
     ];
 
-    onClick() {
-        this.$router.push({ name: 'exercise-details'})
+    async onClick(exercise: any) {
+        await this.$router.push({ name: 'exercise-details.view', params: { exerciseName: exercise.name, exercise } });
     }
 }

@@ -1,5 +1,9 @@
 import Vue from 'vue';
-import { Component } from 'vue-property-decorator';
+import { Component, Prop } from 'vue-property-decorator';
 
 @Component
-export default class ExerciseDetails extends Vue {}
+export default class ExerciseDetails extends Vue {
+    @Prop() exercise: any;
+
+
+}

@@ -3,9 +3,9 @@
 <template>
     <div class="exerciseLibrary">
         <div class="container">
-            <div class="row">
+            <div class="row mb-4">
                 <div class="col-md-4">
-                    <h1 class="text-left font-weight-light mb-4">Exercise Library</h1>
+                    <h1 class="text-left font-weight-light">Exercise Library</h1>
                 </div>
                 <div class="col-md-4 offset-4">
                     <form class="form-inline">
@@ -24,7 +24,7 @@
                     <div class="container">
                         <div class="row row-cols-1 row-cols-md-3">
                             <div class="col mb-5" v-for="exercise in exercises" :key="exercise.id">
-                                <ExerciseLibraryCard v-on:click.native="onClick" :exercise="exercise"></ExerciseLibraryCard>
+                                <ExerciseLibraryCard v-on:click.native="onClick(exercise)" :exercise="exercise"></ExerciseLibraryCard>
                             </div>
                         </div>
                     </div>
