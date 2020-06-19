@@ -5,13 +5,14 @@
     <div class="exerciseLibrarySideNav">
         <div class="card shadow">
             <div class="card-header">
-                <h5 class="card-title">
+                <h5 class="card-title m-0">
                     Categories
                 </h5>
             </div>
             <div class="card-body p-0">
                 <div class="list-group">
-                    <a class="list-group-item list-group-item-action" href="#" v-for="muscleGroup in muscleGroups" :key="muscleGroup">
+                    <a class="list-group-item list-group-item-action" href="#" v-for="muscleGroup in muscleGroups"
+                       :key="muscleGroup">
                         {{muscleGroup}}
                     </a>
                 </div>
