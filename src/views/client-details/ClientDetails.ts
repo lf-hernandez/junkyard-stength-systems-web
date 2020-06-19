@@ -3,6 +3,7 @@ import { Component } from 'vue-property-decorator';
 
 import ClientDetailsForm from '@/components/clients/client-details/client-details-form/ClientDetailsForm.vue';
 import ClientAvatar from '@/components/ui/client-avatar/ClientAvatar.vue';
+import ClientsStore from '@/store/clients/ClientsStore';
 
 @Component({
     components: {
@@ -14,7 +15,9 @@ export default class ClientDetails extends Vue {
     client: any = {};
 
     created() {
-        this.client = this.$route.params.client;
+        const clientId = this.$route.params.clientId;
+
+        this.client = ClientsStore.getters.clientById(clientId)
     }
 
     get isEditView() {
