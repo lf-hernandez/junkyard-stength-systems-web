@@ -5,10 +5,11 @@ import { Component, Prop } from 'vue-property-decorator';
 export default class ExerciseDetailsForm extends Vue {
     @Prop() exercise: any;
     movementTypes = [
-        {text: 'Main', value: 'Main'},
-        {text: 'Assistance', value: 'Assistance'},
-        {text: 'Accessory', value: 'Accessory'}
+        { text: 'Main', value: 'Main' },
+        { text: 'Assistance', value: 'Assistance' },
+        { text: 'Accessory', value: 'Accessory' }
     ];
+
     options = [
         {
             value: 'Chest',
@@ -37,6 +38,18 @@ export default class ExerciseDetailsForm extends Vue {
             name: 'glutes'
         },
         {
+            value: 'Adductors',
+            name: 'adductors'
+        },
+        {
+            value: 'Calves',
+            name: 'calves'
+        },
+        {
+            value: 'QL',
+            name: 'ql'
+        },
+        {
             value: 'Hamstrings',
             name: 'hamstrings'
         },
@@ -53,4 +66,8 @@ export default class ExerciseDetailsForm extends Vue {
             name: 'sits'
         }
     ];
+
+    onCancel() {
+        this.$router.go(-1);
+    }
 }
