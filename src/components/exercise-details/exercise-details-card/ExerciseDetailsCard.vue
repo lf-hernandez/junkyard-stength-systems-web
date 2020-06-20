@@ -1,33 +1,30 @@
 <script lang="ts" src="./ExerciseDetailsCard.ts"></script>
+
 <template>
     <div class="exerciseDetailsCard">
         <div class="row mt-5">
             <div class="col">
                 <div class="card">
                     <div class="card-body">
-                        <h3 class="card-title">
-                            {{ exercise.name }}
-                        </h3>
+                        <h3 class="card-title">{{ exercise.name }}</h3>
 
-                        <hr>
-
+                        <hr/>
                         {{ exercise.description }}
+                        <hr/>
 
-                        <hr>
-
-                        <h5>Movement Type: </h5>
+                        <h5>Movement Type:</h5>
                         <span class="badge badge-warning">{{ exercise.movementType }}</span>
 
-                        <hr>
+                        <hr/>
 
                         <h5 class="card-title">Muscle Groups</h5>
 
                         <div class="d-flex">
-                            <div class="mr-2" v-for="muscle in exercise.muscles" :key="muscle.name">
-                                <span class="badge badge-pill badge-success">{{muscle}}</span>
+                            <div class="mr-2" v-for="muscle in muscles" :key="muscle">
+                                <span class="badge badge-pill"
+                                      :class="{'badge-success': isActive(muscle, exercise.muscles), 'badge-secondary': !isActive(muscle, exercise.muscles)}">{{muscle}}</span>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
