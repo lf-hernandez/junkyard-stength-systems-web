@@ -4,7 +4,11 @@ import { Component, Prop } from 'vue-property-decorator';
 @Component
 export default class ExerciseDetailsForm extends Vue {
     @Prop() exercise: any;
-
+    movementTypes = [
+        {text: 'Main', value: 'Main'},
+        {text: 'Assistance', value: 'Assistance'},
+        {text: 'Accessory', value: 'Accessory'}
+    ];
     options = [
         {
             value: 'Chest',

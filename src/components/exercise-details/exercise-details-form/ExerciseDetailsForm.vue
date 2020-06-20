@@ -18,7 +18,16 @@
                                   v-model="exercise.description"/>
                     </div>
 
-                    <hr class="my-5">
+                    <div class="form-group">
+                        <label for="inputState">Movement Type</label>
+                        <select id="inputState" class="form-control" v-model="exercise.movementType">
+                            <option v-for="movementType in movementTypes" :value="movementType.value" :key="movementType.text">
+                                {{movementType.text}}
+                            </option>
+                        </select>
+                    </div>
+
+                    <hr class="my-4">
 
                     <div class="form-group">
                         <h3 class="mb-4 font-weight-light text-center">Muscle Groups</h3>

@@ -14,6 +14,12 @@
                         {{ exercise.description }}
 
                         <hr>
+
+                        <h5>Movement Type: </h5>
+                        <span class="badge badge-warning">{{ exercise.movementType }}</span>
+
+                        <hr>
+
                         <h5 class="card-title">Muscle Groups</h5>
 
                         <div class="d-flex">
