@@ -71,4 +71,8 @@ export default class ExerciseLibrary extends Vue {
             }
         });
     }
+
+    async onAddExercise() {
+        await this.$router.push({ name: 'exercise-library.add'});
+    }
 }

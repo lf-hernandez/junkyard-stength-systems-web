@@ -1,5 +1,6 @@
 <script lang="ts" src="./ExerciseLibrary.ts"></script>
 <style lang="scss" src="./ExerciseLibrary.scss"></style>
+
 <template>
     <div class="exerciseLibrary">
         <div class="container">
@@ -19,7 +20,7 @@
                 <div class="flex-column flex-shrink mr-4">
                     <ExerciseLibrarySideNav></ExerciseLibrarySideNav>
 
-                    <button class="btn btn-block btn-lg btn-dark mt-4">
+                    <button class="btn btn-block btn-lg btn-dark mt-4" @click="onAddExercise">
                         <font-awesome-icon icon="plus"></font-awesome-icon>
                         Add Exercise
                     </button>
