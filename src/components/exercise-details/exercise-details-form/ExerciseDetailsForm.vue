@@ -23,8 +23,8 @@
                     <div class="form-group">
                         <h3>Muscle Groups</h3>
                         <div v-for="option in options" :key="option.value">
-                            <input type="checkbox" :id="option.name" :value="option.Value" v-model="checkedValues">
-                            <label :for="option.name">{{option.Value}}</label>
+                            <input type="checkbox" :id="option.name" :value="option.value" v-model="checkedValues">
+                            <label :for="option.name">{{option.value}}</label>
                         </div>
 
                     </div>

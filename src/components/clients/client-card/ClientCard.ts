@@ -29,11 +29,11 @@ export default class ClientCard extends Vue {
         return this.client.LastCheckIn;
     }
 
-    async pushEditRoute() {
-        await this.$router.push({name: 'client-details.edit', params: { clientId: this.client.Id, client: this.client} });
+    pushEditRoute() {
+        this.$router.push({name: 'client-details.edit', params: {clientId: this.client.Id, client: this.client}});
     }
 
-    async pushViewRoute() {
-        await this.$router.push({name: 'client-details.view', params: { clientId: this.client.Id, client: this.client } });
+    pushViewRoute() {
+        this.$router.push({name: 'client-details.view', params: {clientId: this.client.Id, client: this.client}});
     }
 }
