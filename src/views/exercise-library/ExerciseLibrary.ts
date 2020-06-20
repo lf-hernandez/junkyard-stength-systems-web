@@ -14,37 +14,37 @@ export default class ExerciseLibrary extends Vue {
     exercises = [
         {
             id: 0,
-            name: 'Exercise Name Goes Here...',
+            name: 'Overhead Press',
             description: 'Description goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
         },
         {
             id: 1,
-            name: 'Exercise Name Goes Here...',
+            name: 'Bench Press',
             description: 'Description goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
         },
         {
             id: 2,
-            name: 'Exercise Name Goes Here...',
+            name: 'Squat',
             description: 'Description goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
         },
         {
             id: 3,
-            name: 'Exercise Name Goes Here...',
+            name: 'Front Squat',
             description: 'Description goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
         },
         {
             id: 4,
-            name: 'Exercise Name Goes Here...',
+            name: 'Hamstring Curl',
             description: 'Description goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
         },
         {
             id: 5,
-            name: 'Exercise Name Goes Here...',
+            name: 'French Press',
             description: 'Description goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
         },
         {
             id: 6,
-            name: 'Exercise Name Goes Here...',
+            name: 'Deadlift',
             description: 'Description goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
         }
     ];

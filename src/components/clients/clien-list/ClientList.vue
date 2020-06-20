@@ -1,10 +1,10 @@
 <script lang="ts" src="./ClientList.ts"></script>
 
 <template>
-    <div class="clientList" v-if="IsClientsLoaded">
-        {{clients}}
+    <div class="clientList">
+<!--        Clients: {{clientList.clients[0]}}-->
         <ClientCard
-                v-for="client in clients"
+                v-for="client in clientList"
                 :key="client.Id"
                 :client="client"
                 class="mb-4 shadow-sm rounded"

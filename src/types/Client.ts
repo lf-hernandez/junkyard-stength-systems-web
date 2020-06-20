@@ -1,7 +1,8 @@
 export interface Client {
-    Id: number;
-    FistName: string;
+    Id: string;
+    FirstName: string;
     LastName: string;
+    WeekNumber: number;
     Email: string;
     Phone: string;
     LastCheckIn: Date;

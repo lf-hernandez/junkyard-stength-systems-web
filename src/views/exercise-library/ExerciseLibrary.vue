@@ -5,7 +5,7 @@
         <div class="container">
             <div class="row mb-4">
                 <div class="col-md-4">
-                    <h1 class="text-left font-weight-light">Exercise Library</h1>
+                    <h1 class="text-left font-weight-light m-0">Exercise Library</h1>
                 </div>
                 <div class="col-md-4 offset-4">
                     <form class="form-inline">
