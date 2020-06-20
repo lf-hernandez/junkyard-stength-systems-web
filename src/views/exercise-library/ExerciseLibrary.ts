@@ -11,14 +11,13 @@ import ExerciseLibraryCard from '@/components/exercise-library/exercise-library-
     }
 })
 export default class ExerciseLibrary extends Vue {
-    exercises = [
-        {
-            id: 0,
-            name: 'Overhead Press',
-            description: 'Description goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-            movementType: 'Main',
-            muscles: ['Shoulders', 'Chest', 'Triceps']
-        },
+    exercises = [{
+        id: 0,
+        name: 'Overhead Press',
+        description: 'Description goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+        movementType: 'Main',
+        muscles: ['Shoulders', 'Chest', 'Triceps']
+    },
         {
             id: 1,
             name: 'Bench Press',
@@ -64,6 +63,12 @@ export default class ExerciseLibrary extends Vue {
     ];
 
     async onClick(exercise: any) {
-        await this.$router.push({ name: 'exercise-details.view', params: { exerciseName: exercise.name, exercise } });
+        await this.$router.push({
+            name: 'exercise-details.view',
+            params: {
+                exerciseName: exercise.name,
+                exercise
+            }
+        });
     }
 }
