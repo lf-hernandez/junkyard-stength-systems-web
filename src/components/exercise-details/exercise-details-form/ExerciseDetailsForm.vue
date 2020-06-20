@@ -18,22 +18,25 @@
                                   v-model="exercise.description"/>
                     </div>
 
-                    <hr>
+                    <hr class="my-5">
 
                     <div class="form-group">
-                        <h3>Muscle Groups</h3>
-                        <div v-for="option in options" :key="option.value">
-                            <input type="checkbox" :id="option.name" :value="option.value" v-model="checkedValues">
-                            <label :for="option.name">{{option.value}}</label>
+                        <h3 class="mb-4 font-weight-light text-center">Muscle Groups</h3>
+                        <div class="d-flex flex-wrap">
+                            <div class="form-check flex-fill" v-for="option in options" :key="option.value">
+                                <input class="form-check-input" type="checkbox" :id="option.name" :value="option.value" v-model="exercise.muscles">
+                                <label class="form-check-label" :for="option.name">{{option.value}}</label>
+                            </div>
                         </div>
-
                     </div>
                 </div>
-
             </div>
             <div class="row mt-5">
                 <div class="col">
-                    <button type="submit" class="btn btn-block btn-primary">Save</button>
+                    <button type="submit" class="btn btn-block btn-primary">
+                        <font-awesome-icon icon="save"></font-awesome-icon>
+                        Save
+                    </button>
                 </div>
             </div>
         </form>

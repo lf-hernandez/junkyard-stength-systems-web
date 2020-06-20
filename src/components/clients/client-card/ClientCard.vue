@@ -6,7 +6,7 @@
         <div class="card p-2">
             <div class="d-flex align-items-center p-2">
                 <ClientAvatar :initials="initials"></ClientAvatar>
-                <div class="ml-4 text-left">
+                <div class="flex-fill text-center">
                     <h2 class="m-0">{{ fullName }}</h2>
                     <p class="m-0">Week {{ weekNumber }}</p>
                     <p class="m-0">Last Check-in {{ lastCheckIn}}</p>

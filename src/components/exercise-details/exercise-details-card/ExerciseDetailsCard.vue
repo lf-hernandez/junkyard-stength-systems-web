@@ -15,11 +15,12 @@
 
                         <hr>
                         <h5 class="card-title">Muscle Groups</h5>
-                        <span class="badge badge-pill badge-success mx-3">Chest</span>
-                        <span class="badge badge-pill badge-success mx-3">Triceps</span>
-                        <span class="badge badge-pill badge-success mx-3">Shoulders</span>
-                        <span class="badge badge-pill badge-secondary mx-3">Biceps</span>
-                        <span class="badge badge-pill badge-secondary mx-3">Back</span>
+
+                        <div class="d-flex">
+                            <div class="mr-2" v-for="muscle in exercise.muscles" :key="muscle.name">
+                                <span class="badge badge-pill badge-success">{{muscle}}</span>
+                            </div>
+                        </div>
 
                     </div>
                 </div>

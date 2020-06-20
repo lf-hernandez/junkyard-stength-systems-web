@@ -5,7 +5,7 @@
     <div class="exerciseLibraryCard card p-0" role="button">
         <img src="../../../assets/logo.svg" class="p-4 card-img-top exerciseImg"
              alt="placeholder">
-        <div class="card-header">
+        <div class="card-header text-center">
             {{ exercise.name }}
         </div>
         <div class="card-body">

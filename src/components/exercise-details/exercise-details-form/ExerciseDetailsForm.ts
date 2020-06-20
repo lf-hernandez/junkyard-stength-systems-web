@@ -4,50 +4,49 @@ import { Component, Prop } from 'vue-property-decorator';
 @Component
 export default class ExerciseDetailsForm extends Vue {
     @Prop() exercise: any;
-    
-    checkedValues = [];
+
     options = [
         {
-            name: 'Chest',
-            value: 'chest'
+            value: 'Chest',
+            name: 'chest'
         },
         {
-            name: 'Traps',
-            value: 'traps'
+            value: 'Traps',
+            name: 'traps'
         },
         {
-            name: 'Shoulders',
-            value: 'shoulders'
+            value: 'Shoulders',
+            name: 'shoulders'
         },
         {
-            name: 'Triceps',
-            value: 'triceps'
+            value: 'Triceps',
+            name: 'triceps'
         }, {
-            name: 'Biceps',
-            value: 'biceps'
+            value: 'Biceps',
+            name: 'biceps'
         }, {
-            name: 'Back',
-            value: 'back'
+            value: 'Back',
+            name: 'back'
         },
         {
-            name: 'Glutes',
-            value: 'glutes'
+            value: 'Glutes',
+            name: 'glutes'
         },
         {
-            name: 'Hamstrings',
-            value: 'hamstrings'
+            value: 'Hamstrings',
+            name: 'hamstrings'
         },
         {
-            name: 'Quads',
-            value: 'quads'
+            value: 'Quads',
+            name: 'quads'
         },
         {
-            name: 'Abs',
-            value: 'abs'
+            value: 'Abs',
+            name: 'abs'
         },
         {
-            name: 'SITS',
-            value: 'sits'
-        },
+            value: 'SITS',
+            name: 'sits'
+        }
     ];
 }
