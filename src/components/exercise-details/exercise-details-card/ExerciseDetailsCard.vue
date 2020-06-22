@@ -32,15 +32,15 @@
 
         <div class="row mt-5">
             <div class="col">
-                <button class="btn btn-block btn-primary" type="button" @click="onEdit">
-                    <font-awesome-icon icon="edit"></font-awesome-icon>
-                    Edit
-                </button>
-            </div>
-            <div class="col">
                 <button class="btn btn-block btn-danger" type="button" @click="onDelete">
                     <font-awesome-icon icon="trash-alt"></font-awesome-icon>
                     Delete
+                </button>
+            </div>
+            <div class="col">
+                <button class="btn btn-block btn-primary" type="button" @click="onEdit">
+                    <font-awesome-icon icon="edit"></font-awesome-icon>
+                    Edit
                 </button>
             </div>
         </div>
