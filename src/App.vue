@@ -2,7 +2,7 @@
     <div id="app" class="d-flex flex-column h-100">
         <AppNav></AppNav>
 
-        <main role="main" class="flex-shrink-0">
+        <main role="main" class="pb-5">
             <router-view/>
         </main>
 
