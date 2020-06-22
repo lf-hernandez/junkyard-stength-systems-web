@@ -9,7 +9,7 @@ const _clients: Array<Client> = [
         FirstName: 'Simon',
         LastName: 'Bolivar',
         WeekNumber: 7,
-        Email: 'test@gmail.com',
+        Email: 'test@email.com',
         LastCheckIn: _checkInDate,
         Phone: '(555) 555-5555'
     },
@@ -18,7 +18,7 @@ const _clients: Array<Client> = [
         FirstName: 'Selina',
         LastName: 'Kyle',
         WeekNumber: 3,
-        Email: 'test@gmail.com',
+        Email: 'test@email.com',
         LastCheckIn: _checkInDate,
         Phone: '(555) 555-5555'
     },
@@ -27,7 +27,7 @@ const _clients: Array<Client> = [
         FirstName: 'Thor',
         LastName: 'Odinson',
         WeekNumber: 10,
-        Email: 'test@gmail.com',
+        Email: 'test@email.com',
         LastCheckIn: _checkInDate,
         Phone: '(555) 555-5555'
     },
@@ -36,7 +36,7 @@ const _clients: Array<Client> = [
         FirstName: 'Lebron',
         LastName: 'James',
         WeekNumber: 2,
-        Email: 'test@gmail.com',
+        Email: 'test@email.com',
         LastCheckIn: _checkInDate,
         Phone: '(555) 555-5555'
     },
@@ -45,7 +45,7 @@ const _clients: Array<Client> = [
         FirstName: 'James',
         LastName: 'Howlett',
         WeekNumber: 17,
-        Email: 'test@gmail.com',
+        Email: 'test@email.com',
         LastCheckIn: _checkInDate,
         Phone: '(555) 555-5555'
     },
@@ -54,7 +54,7 @@ const _clients: Array<Client> = [
         FirstName: 'Wade',
         LastName: 'Wilson',
         WeekNumber: 32,
-        Email: 'test@gmail.com',
+        Email: 'test@email.com',
         LastCheckIn: _checkInDate,
         Phone: '(555) 555-5555'
     }
