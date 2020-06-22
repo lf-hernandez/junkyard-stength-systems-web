@@ -1,9 +1,12 @@
 <template>
-    <div id="app">
-        <Navbar></Navbar>
-        <main role="main">
+    <div id="app" class="d-flex flex-column h-100">
+        <AppNav></AppNav>
+
+        <main role="main" class="flex-shrink-0">
             <router-view/>
         </main>
+
+        <AppFooter></AppFooter>
     </div>
 </template>
 
@@ -29,11 +32,13 @@
     import Vue from 'vue';
     import { Component } from 'vue-property-decorator';
 
-    import Navbar from '@/components/layout/nav-bar/NavBar.vue';
+    import AppNav from '@/components/layout/app-nav/AppNav.vue';
+    import AppFooter from '@/components/layout/app-footer/AppFooter.vue';
 
     @Component({
         components: {
-            Navbar
+            AppNav,
+            AppFooter
         }
     })
     export default class App extends Vue {

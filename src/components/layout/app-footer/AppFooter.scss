@@ -1,0 +1,18 @@
+footer {
+    background-color: #212121;
+
+    p {
+        color: #FAFAFA;
+        margin: 0;
+    }
+
+    a {
+        color: #64FFDA;;
+        text-decoration: none;
+        transition: 0.25s ease color;
+
+        &:hover {
+            color: #FAFAFA;
+        }
+    }
+}
