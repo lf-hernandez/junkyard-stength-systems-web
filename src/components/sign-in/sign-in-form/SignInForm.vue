@@ -1,7 +1,8 @@
-<script lang="ts" src="./LoginForm.ts"></script>
+<script lang="ts" src="./SignInForm.ts"></script>
+<style lang="scss" src="./SignInForm.scss"></style>
 
 <template>
-  <div class="loginForm">
+  <div class="signInForm">
     <div class="card">
       <div class="card-body text-left">
         <form>
@@ -15,7 +16,7 @@
             <input type="password" class="form-control" id="password" />
           </div>
 
-          <button type="submit" class="mt-5 btn btn-block btn-primary">Login</button>
+          <button type="submit" class="mt-5 btn btn-block btn-primary">SignIn</button>
         </form>
       </div>
     </div>

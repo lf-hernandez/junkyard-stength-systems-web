@@ -42,10 +42,16 @@
             </div>
             <div class="row mt-5">
                 <div class="col">
-                    <button type="button" class="btn btn-block btn-danger">Remove</button>
+                    <button type="button" class="btn btn-block btn-danger">
+                        <font-awesome-icon icon="trash"></font-awesome-icon>
+                        Remove
+                    </button>
                 </div>
                 <div class="col">
-                    <button type="submit" class="btn btn-block btn-primary">Save</button>
+                    <button type="submit" class="btn btn-block btn-primary">
+                        <font-awesome-icon icon="save"></font-awesome-icon>
+                        Save
+                    </button>
                 </div>
             </div>
         </form>

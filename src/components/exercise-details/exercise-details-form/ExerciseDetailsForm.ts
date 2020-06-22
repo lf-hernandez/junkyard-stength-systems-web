@@ -1,17 +1,27 @@
 import Vue from 'vue';
 import { Component, Prop } from 'vue-property-decorator';
+import { Exercise } from '@/types/Exercise';
 
 @Component
 export default class ExerciseDetailsForm extends Vue {
-    @Prop() exercise: any;
+    @Prop() exercise: Exercise;
 
-    movementTypes = [
-        { text: 'Main', value: 'Main' },
-        { text: 'Assistance', value: 'Assistance' },
-        { text: 'Accessory', value: 'Accessory' }
+    movementTypes: Array<object> = [
+        {
+            text: 'Main',
+            value: 'Main'
+        },
+        {
+            text: 'Assistance',
+            value: 'Assistance'
+        },
+        {
+            text: 'Accessory',
+            value: 'Accessory'
+        }
     ];
 
-    options = [
+    options: Array<object> = [
         {
             value: 'Chest',
             name: 'chest'
