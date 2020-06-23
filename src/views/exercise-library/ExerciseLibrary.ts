@@ -3,7 +3,9 @@ import { Component } from 'vue-property-decorator';
 
 import ExerciseLibrarySideNav from '@/components/exercise-library/exercise-side-nav/ExerciseLibrarySideNav.vue';
 import ExerciseLibraryCard from '@/components/exercise-library/exercise-library-card/ExerciseLibraryCard.vue';
-import { Exercise } from '@/types/Exercise';
+
+import { Exercise } from '@/types/types';
+
 
 @Component({
     components: {
