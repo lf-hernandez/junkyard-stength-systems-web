@@ -6,8 +6,10 @@ import { actions } from '@/store/modules/clients/actions';
 
 import { ClientsState, RootState } from '@/types/types';
 
+const namespaced = true;
+
 export const clients: Module<ClientsState, RootState> = {
-    namespaced: true,
+    namespaced,
     state,
     getters,
     mutations,
