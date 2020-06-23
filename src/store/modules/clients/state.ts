@@ -1,4 +1,4 @@
-import { ClientsState } from '@/types/ClientsState';
+import { ClientsState } from '@/types/types';
 
 export const state: ClientsState = {
     clients: []

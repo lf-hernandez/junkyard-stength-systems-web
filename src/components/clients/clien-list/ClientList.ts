@@ -2,12 +2,11 @@ import Vue from 'vue';
 import { Component } from 'vue-property-decorator';
 
 import { State, Action } from 'vuex-class';
-import { ClientsState } from '@/types/ClientsState';
-
-const namespace = 'clients';
+import { ClientsState } from '@/types/types';
 
 import ClientCard from '@/components/clients/client-card/ClientCard.vue';
 
+const namespace = 'clients';
 
 @Component({
     components: {
@@ -17,14 +16,16 @@ import ClientCard from '@/components/clients/client-card/ClientCard.vue';
 export default class ClientList extends Vue {
     isDataLoaded = false;
 
-    @State('clients') clientsState: ClientsState;
+    @State('clients', {namespace}) clientsState: ClientsState;
     @Action('getClients', {namespace}) getClients: any;
 
 
     async created() {
         try {
+            console.log(this.clientsState.clients);
             await this.loadClients();
             this.isDataLoaded = true;
+            console.log(this.clientsState.default.data);
         } catch (e) {
             console.log(e);
         }
@@ -34,9 +35,4 @@ export default class ClientList extends Vue {
     async loadClients() {
         await this.getClients();
     }
-
-    get clientList() {
-        return this.clientsState.clients.default.data;
-    }
-
 }

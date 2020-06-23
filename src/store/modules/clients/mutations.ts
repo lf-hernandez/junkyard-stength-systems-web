@@ -1,6 +1,5 @@
 import { MutationTree } from 'vuex';
-import { ClientsState} from '@/types/ClientsState';
-import { Client } from '@/types/Client';
+import { Client, ClientsState} from '@/types/types';
 
 export const mutations: MutationTree<ClientsState> = {
     setClients(state: any, clients: Array<Client>) {

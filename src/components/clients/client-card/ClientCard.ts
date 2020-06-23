@@ -3,7 +3,7 @@ import { Component, Prop } from 'vue-property-decorator';
 
 import ClientAvatar from '@/components/ui/client-avatar/ClientAvatar.vue';
 
-import { Client } from '@/types/Client';
+import { Client } from '@/types/types';
 
 @Component({
     components: {

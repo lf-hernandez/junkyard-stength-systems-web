@@ -5,8 +5,7 @@ import { getters } from '@/store/modules/clients/getters';
 import { mutations } from '@/store/modules/clients/mutations';
 import { actions } from '@/store/modules/clients/actions';
 
-import { ClientsState } from '@/types/ClientsState';
-import { RootState } from '@/types/RootState';
+import { ClientsState, RootState } from '@/types/types';
 
 export const clients: Module<ClientsState, RootState> = {
     namespaced: true,
