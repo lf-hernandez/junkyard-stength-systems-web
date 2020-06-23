@@ -6,13 +6,23 @@ footer {
         margin: 0;
     }
 
-    a {
+    .authorAnchor {
         color: #64FFDA;;
         text-decoration: none;
         transition: 0.25s ease color;
 
         &:hover {
             color: #FAFAFA;
+        }
+    }
+
+    .brandIconAnchor {
+        color: #FAFAFA;
+        text-decoration: none;
+        transition: 0.25s ease color;
+
+        &:hover {
+            color: #FFF
         }
     }
 }
