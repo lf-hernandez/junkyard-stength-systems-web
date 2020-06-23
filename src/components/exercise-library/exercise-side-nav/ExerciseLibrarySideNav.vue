@@ -1,6 +1,3 @@
-<script lang="ts" src="./ExerciseLibrarySideNav.ts"></script>
-<style lang="scss" src="./ExerciseLibrarySideNav.scss"></style>
-
 <template>
     <div class="exerciseLibrarySideNav">
         <div class="card shadow">
@@ -20,3 +17,5 @@
         </div>
     </div>
 </template>
+<script lang="ts" src="./ExerciseLibrarySideNav.ts"></script>
+<style lang="scss" src="./ExerciseLibrarySideNav.scss"></style>

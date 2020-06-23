@@ -1,6 +1,3 @@
-<script lang="ts" src="./ExerciseLibrary.ts"></script>
-<style lang="scss" src="./ExerciseLibrary.scss"></style>
-
 <template>
     <div class="exerciseLibrary container pt-5">
         <div class="row mb-5">
@@ -20,8 +17,7 @@
                 <ExerciseLibrarySideNav></ExerciseLibrarySideNav>
 
                 <button class="btn btn-block btn-lg btn-dark mt-4" @click="onAddExercise">
-                    <font-awesome-icon icon="plus"></font-awesome-icon>
-                    Add Exercise
+                    <font-awesome-icon :icon="['fas', 'plus']"></font-awesome-icon> Add Exercise
                 </button>
             </div>
 
@@ -36,4 +32,5 @@
         </div>
     </div>
 </template>
-
+<script lang="ts" src="./ExerciseLibrary.ts"></script>
+<style lang="scss" src="./ExerciseLibrary.scss"></style>

@@ -1,6 +1,3 @@
-<script lang="ts" src="./ClientCard.ts"></script>
-<style lang="scss" src="./ClientCard.scss"></style>
-
 <template>
     <div class="clientCard">
         <div class="card p-2">
@@ -13,13 +10,11 @@
                 </div>
                 <div class="ml-auto p-4">
                     <button class="btn btn-lg btn-primary mr-3" @click="pushViewRoute">
-                        <font-awesome-icon icon="id-card"></font-awesome-icon>
-                        View
+                        <font-awesome-icon :icon="['fas', 'id-card']"></font-awesome-icon> View
                     </button>
 
                     <button class="btn btn-lg btn-success" @click="pushEditRoute">
-                        <font-awesome-icon icon="edit"></font-awesome-icon>
-                        Edit
+                        <font-awesome-icon :icon="['fas', 'edit']"></font-awesome-icon> Edit
                     </button>
                 </div>
             </div>
@@ -27,3 +22,5 @@
         </div>
     </div>
 </template>
+<script lang="ts" src="./ClientCard.ts"></script>
+<style lang="scss" src="./ClientCard.scss"></style>

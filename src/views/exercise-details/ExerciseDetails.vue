@@ -1,5 +1,3 @@
-<script lang="ts" src="./ExerciseDetails.ts"></script>
-
 <template>
     <div class="exerciseDetails container mt-5">
         <h1 class="font-weight-light mb-5">
@@ -15,3 +13,4 @@
         </template>
     </div>
 </template>
+<script lang="ts" src="./ExerciseDetails.ts"></script>

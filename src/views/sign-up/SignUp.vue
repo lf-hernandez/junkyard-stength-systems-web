@@ -1,5 +1,3 @@
-<script lang="ts" src="./SignUp.ts"></script>
-
 <template>
     <div class="signUp container pt-5">
         <div class="row">
@@ -20,4 +18,4 @@
         </div>
     </div>
 </template>
-
+<script lang="ts" src="./SignUp.ts"></script>

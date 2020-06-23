@@ -1,5 +1,3 @@
-<style lang="scss" src="./AppFooter.scss"></style>
-
 <template>
     <footer role="contentinfo" class="footer mt-auto py-3">
         <div class="container-fluid">
@@ -7,7 +5,7 @@
                 <div class="row align-items-center justify-content-between">
                     <div class="col-auto">
                         <p class="float-left">
-                            <font-awesome-icon icon="code" class="mx-1"></font-awesome-icon>
+                            <font-awesome-icon :icon="['fas', 'code']" class="mx-1"></font-awesome-icon>
                             <small>Created by <a class="authorAnchor" href="https://github.com/lf-hernandez">Luis Felipe Hernandez</a></small>
                         </p>
                     </div>
@@ -31,3 +29,4 @@
         </div>
     </footer>
 </template>
+<style lang="scss" src="./AppFooter.scss"></style>

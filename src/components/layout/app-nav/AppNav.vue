@@ -1,6 +1,3 @@
-<style lang="scss" src="./AppNav.scss"></style>
-<script lang="ts" src="./AppNav.ts"></script>
-
 <template>
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
@@ -27,3 +24,5 @@
         </nav>
     </header>
 </template>
+<script lang="ts" src="./AppNav.ts"></script>
+<style lang="scss" src="./AppNav.scss"></style>

@@ -1,5 +1,3 @@
-<script lang="ts" src="./ClientDetails.ts"></script>
-
 <template>
     <div class="clientDetails container pt-5">
         <h1 class="text-left font-weight-light m-0">
@@ -35,4 +33,4 @@
         </div>
     </div>
 </template>
-
+<script lang="ts" src="./ClientDetails.ts"></script>

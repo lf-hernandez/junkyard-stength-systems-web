@@ -1,5 +1,3 @@
-<script lang="ts" src="./SignIn.ts"></script>
-
 <template>
     <div class="signIn container pt-5">
             <div class="row">
@@ -14,4 +12,4 @@
             </div>
         </div>
 </template>
-
+<script lang="ts" src="./SignIn.ts"></script>

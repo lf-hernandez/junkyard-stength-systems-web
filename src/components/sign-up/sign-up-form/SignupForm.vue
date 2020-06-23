@@ -1,5 +1,3 @@
-<script lang="ts" src="./SignUpForm.ts"></script>
-
 <template>
   <div class="signUpForm">
     <div class="card">
@@ -26,4 +24,4 @@
     </div>
   </div>
 </template>
-
+<script lang="ts" src="./SignUpForm.ts"></script>

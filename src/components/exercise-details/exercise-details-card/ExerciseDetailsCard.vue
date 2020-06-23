@@ -1,5 +1,3 @@
-<script lang="ts" src="./ExerciseDetailsCard.ts"></script>
-
 <template>
     <div class="exerciseDetailsCard">
         <div class="row mt-5">
@@ -33,16 +31,15 @@
         <div class="row mt-5">
             <div class="col">
                 <button class="btn btn-block btn-danger" type="button" @click="onDelete">
-                    <font-awesome-icon icon="trash-alt"></font-awesome-icon>
-                    Delete
+                    <font-awesome-icon :icon="['fas', 'trash-alt']"></font-awesome-icon> Delete
                 </button>
             </div>
             <div class="col">
                 <button class="btn btn-block btn-primary" type="button" @click="onEdit">
-                    <font-awesome-icon icon="edit"></font-awesome-icon>
-                    Edit
+                    <font-awesome-icon :icon="['fas', 'edit']"></font-awesome-icon> Edit
                 </button>
             </div>
         </div>
     </div>
 </template>
+<script lang="ts" src="./ExerciseDetailsCard.ts"></script>

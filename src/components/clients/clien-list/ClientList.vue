@@ -1,5 +1,3 @@
-<script lang="ts" src="./ClientList.ts"></script>
-
 <template>
     <div class="clientList">
 <!--        Clients: {{clientList.clients[0]}}-->
@@ -11,4 +9,4 @@
         ></ClientCard>
     </div>
 </template>
-
+<script lang="ts" src="./ClientList.ts"></script>

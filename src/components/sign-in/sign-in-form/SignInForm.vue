@@ -1,6 +1,3 @@
-<script lang="ts" src="./SignInForm.ts"></script>
-<style lang="scss" src="./SignInForm.scss"></style>
-
 <template>
   <div class="signInForm">
     <div class="card">
@@ -22,4 +19,5 @@
     </div>
   </div>
 </template>
-
+<script lang="ts" src="./SignInForm.ts"></script>
+<style lang="scss" src="./SignInForm.scss"></style>
