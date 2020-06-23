@@ -1,7 +1,7 @@
 <template>
     <div class="clientList">
         <ClientCard
-                v-for="client in clientsState.clients"
+                v-for="client in clients"
                 :key="client.Id"
                 :client="client"
                 class="mb-4 shadow-sm rounded"
