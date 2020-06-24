@@ -13,7 +13,7 @@
             <input type="password" class="form-control" id="password" />
           </div>
 
-          <button type="submit" class="mt-5 btn btn-block btn-primary">SignIn</button>
+          <button type="submit" class="mt-5 btn btn-block btn-primary">Sign In</button>
         </form>
       </div>
     </div>
