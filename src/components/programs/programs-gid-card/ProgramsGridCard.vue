@@ -1,7 +1,7 @@
 <template>
     <div class="programsGridCard card p-0">
         <div class="card-header text-center">
-            {{ FullName }}
+            {{ getFullName(client.id) }}
         </div>
         <div class="card-body">
             <p>Week: {{ client.weekNumber }}</p>

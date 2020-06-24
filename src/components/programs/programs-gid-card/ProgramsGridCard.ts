@@ -1,32 +1,17 @@
 import Vue from 'vue';
 import { Component, Prop } from 'vue-property-decorator';
-import { Action, Getter, State } from 'vuex-class';
-import { Client, ClientsState } from '@/types/types';
+
+import { Client } from '@/types/types';
+import { Getter } from 'vuex-class';
 
 const namespace = 'clients';
 
 @Component
 export default class ProgramsGridCard extends Vue {
-    @Prop() clientId: string;
-    @State('clients', { namespace }) clientsState: ClientsState;
-    @Action('getClients', { namespace }) getClients: any;
-    @Getter('clientFullName', { namespace }) getClientFullName: any;
+    @Prop() client: Client;
+    @Getter('clientFullName', {namespace}) getClientFullName: any;
 
-    async created() {
-        try {
-            await this.getClients();
-        } catch(e) {
-            console.log(e);
-        }
-    }
-
-    get clients(): Array<Client> {
-        return this.clientsState.default.data;
-    }
-
-    FullName(id: string) {
+    getFullName(id: string) {
         return this.getClientFullName(id);
     }
-
-
 }

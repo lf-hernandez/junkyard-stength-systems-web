@@ -4,7 +4,8 @@
 
         <div class="d-flex flex-nowrap">
             <div class="flex-column flex-shrink mr-4">
-                <ProgramsSideNav class="pt-5"></ProgramsSideNav>
+                <ProgramsSideNav :clients="clients"
+                                 class="pt-5"></ProgramsSideNav>
 
                 <button class="btn btn-block btn-lg btn-dark mt-4">
                     <font-awesome-icon :icon="['fas', 'plus']"></font-awesome-icon>
@@ -13,23 +14,9 @@
             </div>
 
             <div class="flex-column flex-grow">
-                <ProgramsGrid></ProgramsGrid>
+                <ProgramsGrid :clients="clients"></ProgramsGrid>
             </div>
         </div>
     </div>
 </template>
-<script lang="ts">
-    import Vue from 'vue';
-    import { Component } from 'vue-property-decorator';
-    import ProgramsSideNav from '../../components/programs/programs-side-nav/ProgramsSideNav.vue';
-    import ProgramsGrid from '@/components/programs/programs-grid/ProgramsGrid.vue';
-
-    @Component({
-        components: {
-            ProgramsSideNav,
-            ProgramsGrid
-        }
-    })
-    export default class Programs extends Vue {
-    }
-</script>
+<script lang="ts" src="./Programs.ts"></script>
