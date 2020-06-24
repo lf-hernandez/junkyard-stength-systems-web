@@ -1,21 +1,24 @@
 import Vue from 'vue';
 import { Component, Prop } from 'vue-property-decorator';
 
-import { Getter } from 'vuex-class';
+import { Action, Getter, State } from 'vuex-class';
+import { ClientsState } from '@/types/types';
 
 const namespace = 'clients';
 
 @Component
 export default class ClientDetailsForm extends Vue {
     @Prop() clientId: string;
+    @State('clients', { namespace }) clientsState: ClientsState;
+    @Action('getClients', { namespace }) getClients: any;
+    @Getter('clientById',  {namespace }) getClientById: any;
 
-    @Getter('clientById', {namespace}) getClientById: (arg0: any) => any;
-
-    created() {
-        console.log(this.$store);
-        console.log(this.clientId);
-        console.log(this.getClientById(this.clientId));
-        console.log(this.client);
+    async created() {
+        try {
+            await this.getClients;
+        } catch(e) {
+            console.log(e);
+        }
     }
 
     get client() {
