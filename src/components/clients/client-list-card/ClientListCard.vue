@@ -1,5 +1,5 @@
 <template>
-    <div class="clientCard">
+    <div class="clientListCard">
         <div class="card p-2">
             <div class="d-flex align-items-center p-2">
                 <ClientAvatar :initials="initials"></ClientAvatar>
@@ -22,5 +22,5 @@
         </div>
     </div>
 </template>
-<script lang="ts" src="./ClientCard.ts"></script>
-<style lang="scss" src="./ClientCard.scss"></style>
+<script lang="ts" src="./ClientListCard.ts"></script>
+<style lang="scss" src="./ClientListCard.scss"></style>

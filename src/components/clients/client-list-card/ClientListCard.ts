@@ -10,7 +10,7 @@ import { Client } from '@/types/types';
         ClientAvatar
     }
 })
-export default class ClientCard extends Vue {
+export default class ClientListCard extends Vue {
     @Prop() client: Client;
 
     get fullName() {

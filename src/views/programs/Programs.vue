@@ -13,8 +13,7 @@
             </div>
 
             <div class="flex-column flex-grow">
-                <div class="row row-cols-1 row-cols-md-3">
-                </div>
+                <ProgramsGrid></ProgramsGrid>
             </div>
         </div>
     </div>
@@ -23,9 +22,13 @@
     import Vue from 'vue';
     import { Component } from 'vue-property-decorator';
     import ProgramsSideNav from '../../components/programs/programs-side-nav/ProgramsSideNav.vue';
+    import ProgramsGrid from '@/components/programs/programs-grid/ProgramsGrid.vue';
 
     @Component({
-        components: {ProgramsSideNav}
+        components: {
+            ProgramsSideNav,
+            ProgramsGrid
+        }
     })
     export default class Programs extends Vue {
     }
