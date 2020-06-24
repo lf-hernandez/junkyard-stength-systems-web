@@ -11,3 +11,4 @@
 </template>
 
 <script lang="ts" src="./ProgramsGridCard.ts"></script>
+<style lang="scss" src="./ProgramGridCard.scss" scoped></style>
