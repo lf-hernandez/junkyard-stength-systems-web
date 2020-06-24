@@ -1,20 +1,20 @@
 import { MutationTree } from 'vuex';
-import { Client, ClientsState} from '@/types/types';
+import { Client, ClientsState } from '@/types/types';
 
 export const mutations: MutationTree<ClientsState> = {
-    setClients(state: any, clients: Array<Client>) {
+    setClients(state, clients: Array<Client>) {
         state.clients = clients;
     },
-    addClient(state: any, client: Client) {
-        state.clients.push(client);
+    addClient(state, newClient: Client) {
+        state.clients.push(newClient);
     },
-    updateClient(state: any, client: Client) {
-        const index = state.clients.findIndex((c: Client) => c.id === client.id);
+    updateClient(state, updatedClient: Client) {
+        const index = state.clients.findIndex(client => client.id === updatedClient.id);
 
-        state.clients.splice(index, 1, client);
+        state.clients.splice(index, 1, updatedClient);
         state.clients = [...state.clients];
     },
-    deleteClient(state: any, client: Client) {
-        state.clients = [...state.clients.filter((c: Client) => c.id !== client.id)];
+    deleteClient(state, deletedClient: Client) {
+        state.clients = [...state.clients.filter(client => client.id !== deletedClient.id)];
     }
-}
+};
