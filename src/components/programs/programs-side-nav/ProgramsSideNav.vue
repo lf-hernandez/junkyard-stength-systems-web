@@ -1,22 +1,23 @@
 <template>
     <div class="programsSideNav">
         <div class="card shadow">
-            <div class="card-header">
-                <h5 class="card-title m-0">
-                    Clients
-                </h5>
-            </div>
-            <div class="card-body p-0">
-                <div class="list-group">
-                    <a class="list-group-item list-group-item-action" href="#" v-for="client in clients"
-                       :key="client.id">
-                        {{ getFullName(client.id) }}
-                    </a>
-                </div>
+            <div class="list-group">
+                <h5 class="list-group-item-secondary m-0 p-3">By Client</h5>
+                <a class="list-group-item list-group-item-action"
+                   href="#"
+                   v-for="client in clients"
+                   :key="client.id">{{ getFullName(client.id) }}</a>
+                <h5 class="list-group-item-secondary m-0 p-3">By Template</h5>
+                <a class="list-group-item list-group-item-action"
+                   href="#"
+                   v-for="template in templates"
+                   :key="template">{{ template }}</a>
             </div>
         </div>
     </div>
 </template>
 
-<script lang="ts" src="./ProgramsSideNav.ts"></script>
-<style lang="scss" src="./ProgramsSideNav.scss"></style>
+<script lang="ts"
+        src="./ProgramsSideNav.ts"></script>
+<style lang="scss"
+       src="./ProgramsSideNav.scss"></style>

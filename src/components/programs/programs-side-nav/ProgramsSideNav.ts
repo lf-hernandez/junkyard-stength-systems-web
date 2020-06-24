@@ -11,6 +11,12 @@ export default class ProgramsSideNav extends Vue {
     @Prop() clients: Array<Client>;
     @Getter('clientFullName', {namespace}) getClientFullName: any;
 
+    templates = [
+        'Strength',
+        'Hypertrophy',
+        'Combat Sport Conditioning'
+    ];
+
     getFullName(id: string) {
         return this.getClientFullName(id);
     }

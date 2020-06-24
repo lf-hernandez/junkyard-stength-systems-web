@@ -10,7 +10,11 @@
 
                 <button class="btn btn-block btn-lg btn-dark mt-4">
                     <font-awesome-icon :icon="['fas', 'plus']"></font-awesome-icon>
-                    Add Program
+                    Program
+                </button>
+                <button class="btn btn-block btn-lg btn-dark mt-4">
+                    <font-awesome-icon :icon="['fas', 'plus']"></font-awesome-icon>
+                    Template
                 </button>
             </div>
 
