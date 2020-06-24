@@ -1,56 +1,56 @@
 {
   "data": [
     {
-      "Id": 0,
-      "FirstName": "Simon",
-      "LastName": "Bolivar",
-      "WeekNumber": "7",
-      "Email": "test@gmail.com",
-      "LastCheckIn": "06/01/2020",
-      "Phone": "(555) 555-5555"
+      "id": 0,
+      "firstName": "Simon",
+      "lastName": "Bolivar",
+      "weekNumber": "7",
+      "email": "test@gmail.com",
+      "lastCheckIn": "06/01/2020",
+      "phone": "(555) 555-5555"
     },
     {
-      "Id": 1,
-      "FirstName": "Selina",
-      "LastName": "Kyle",
-      "WeekNumber": "3",
-      "Phone": "(555) 555-5555"
+      "id": 1,
+      "firstName": "Selina",
+      "lastName": "Kyle",
+      "weekNumber": "3",
+      "phone": "(555) 555-5555"
     },
     {
-      "Id": 2,
-      "FirstName": "Thor",
-      "LastName": "Odinson",
-      "WeekNumber": "10",
-      "Email": "test@gmail.com",
-      "LastCheckIn": "06/01/2020",
-      "Phone": "(555) 555-5555"
+      "id": 2,
+      "firstName": "Thor",
+      "lastName": "Odinson",
+      "weekNumber": "10",
+      "email": "test@gmail.com",
+      "lastCheckIn": "06/01/2020",
+      "phone": "(555) 555-5555"
     },
     {
-      "Id": 3,
-      "FirstName": "Lebron",
-      "LastName": "James",
-      "WeekNumber": "2",
-      "Email": "test@gmail.com",
-      "LastCheckIn": "06/01/2020",
-      "Phone": "(555) 555-5555"
+      "id": 3,
+      "firstName": "Lebron",
+      "lastName": "James",
+      "weekNumber": "2",
+      "email": "test@gmail.com",
+      "lastCheckIn": "06/01/2020",
+      "phone": "(555) 555-5555"
     },
     {
-      "Id": 4,
-      "FirstName": "James",
-      "LastName": "Howlett",
-      "WeekNumber": "17",
-      "Email": "test@gmail.com",
-      "LastCheckIn": "06/01/2020",
-      "Phone": "(555) 555-5555"
+      "id": 4,
+      "firstName": "James",
+      "lastName": "Howlett",
+      "weekNumber": "17",
+      "email": "test@gmail.com",
+      "lastCheckIn": "06/01/2020",
+      "phone": "(555) 555-5555"
     },
     {
-      "Id": 5,
-      "FirstName": "Wade",
-      "LastName": "Wilson",
-      "WeekNumber": "32",
-      "Email": "test@gmail.com",
-      "LastCheckIn": "06/01/2020",
-      "Phone": "(555) 555-5555"
+      "id": 5,
+      "firstName": "Wade",
+      "lastName": "Wilson",
+      "weekNumber": "32",
+      "email": "test@gmail.com",
+      "lastCheckIn": "06/01/2020",
+      "phone": "(555) 555-5555"
     }
   ]
 }

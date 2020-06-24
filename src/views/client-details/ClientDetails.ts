@@ -22,11 +22,6 @@ export default class ClientDetails extends Vue {
 
     async created() {
         await this.getClients();
-        console.log(this.$store);
-        console.log(this.clientId);
-        console.log(this.state);
-        console.log(this.getClientById(this.clientId));
-        console.log(this.client);
     }
 
     get client() {

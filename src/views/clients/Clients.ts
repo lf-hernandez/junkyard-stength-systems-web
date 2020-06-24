@@ -13,14 +13,12 @@ const namespace = 'clients';
     }
 })
 export default class Clients extends Vue {
-    @State('clients', {namespace}) state: ClientsState;
-    @Action('getClients', {namespace}) getClients: any;
+    @State('clients', { namespace }) state: ClientsState;
+    @Action('getClients', { namespace }) getClients: any;
 
     async created() {
         try {
-            console.log(this.state);
             await this.getClients();
-            console.log(this.state);
         } catch (e) {
             console.log(e);
         }
