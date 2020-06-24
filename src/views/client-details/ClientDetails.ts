@@ -38,6 +38,6 @@ export default class ClientDetails extends Vue {
     }
 
     get initials() {
-        return this.client.FirstName.charAt(0).toUpperCase();
+        return this.client.firstName.charAt(0).toUpperCase();
     }
 }

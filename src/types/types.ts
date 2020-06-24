@@ -7,18 +7,18 @@ export interface Exercise {
 }
 
 export interface Client {
-    Id: string;
-    FirstName: string;
-    LastName: string;
-    WeekNumber: number;
-    Email: string;
-    Phone: string;
-    LastCheckIn: Date;
+    id: string;
+    firstName: string;
+    lastName: string;
+    weekNumber: number;
+    email: string;
+    phone: string;
+    lastCheckIn: Date;
 }
 
 export interface RootState {
 }
 
 export interface ClientsState {
-    clients: [];
+    clients: Array<Client>;
 }

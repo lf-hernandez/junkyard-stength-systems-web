@@ -14,26 +14,26 @@ export default class ClientCard extends Vue {
     @Prop() client: Client;
 
     get fullName() {
-        return `${this.client.FirstName} ${this.client.LastName}`;
+        return `${this.client.firstName} ${this.client.lastName}`;
     }
 
     get initials() {
-        return this.client.FirstName.charAt(0).toUpperCase();
+        return this.client.firstName.charAt(0).toUpperCase();
     }
 
     get weekNumber() {
-        return this.client.WeekNumber;
+        return this.client.weekNumber;
     }
 
     get lastCheckIn() {
-        return this.client.LastCheckIn;
+        return this.client.lastCheckIn;
     }
 
     async pushEditRoute() {
-        await this.$router.push({name: 'client-details.edit', params: { clientId: this.client.Id }} );
+        await this.$router.push({name: 'client-details.edit', params: { clientId: this.client.id }} );
     }
 
     async pushViewRoute() {
-        await this.$router.push({name: 'client-details.view', params: { clientId: this.client.Id }} );
+        await this.$router.push({name: 'client-details.view', params: { clientId: this.client.id }} );
     }
 }

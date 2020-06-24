@@ -2,7 +2,7 @@
     <div class="clientList">
         <ClientCard
                 v-for="client in clients"
-                :key="client.Id"
+                :key="client.id"
                 :client="client"
                 class="mb-4 shadow-sm rounded"
         ></ClientCard>

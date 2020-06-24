@@ -19,13 +19,13 @@
                             <ClientAvatar :initials="initials"></ClientAvatar>
                         </div>
                         <div class="flex-grow flex-fill ml-4 p-2">
-                            <p>First Name: {{ client.FirstName }}</p>
-                            <p>Last Name: {{ client.LastName }}</p>
+                            <p>First Name: {{ client.firstName }}</p>
+                            <p>Last Name: {{ client.lastName }}</p>
                             <hr>
-                            <p>Email: {{ client.Email }}</p>
-                            <p>Phone: {{ client.Phone}}</p>
+                            <p>Email: {{ client.email }}</p>
+                            <p>Phone: {{ client.phone}}</p>
                             <hr>
-                            <p>Last Check-in: {{ client.LastCheckIn}}</p>
+                            <p>Last Check-in: {{ client.lastCheckIn}}</p>
                         </div>
                     </div>
                 </template>
