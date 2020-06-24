@@ -11,11 +11,11 @@ export default class ClientDetailsForm extends Vue {
     @Prop() clientId: string;
     @State('clients', { namespace }) clientsState: ClientsState;
     @Action('getClients', { namespace }) getClients: any;
-    @Getter('clientById',  {namespace }) getClientById: any;
+    @Getter('clientById',  { namespace }) getClientById: any;
 
     async created() {
         try {
-            await this.getClients;
+            await this.getClients();
         } catch(e) {
             console.log(e);
         }

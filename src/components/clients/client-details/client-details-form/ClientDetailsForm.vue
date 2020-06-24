@@ -9,7 +9,7 @@
                                class="form-control"
                                id="first-name"
                                aria-describedby="first-name"
-                               v-model="client.FirstName"/>
+                               v-model="client.firstName"/>
                     </div>
 
                     <div class="form-group">
@@ -18,7 +18,7 @@
                                class="form-control"
                                id="last-name"
                                aria-describedby="last-name"
-                               v-model="client.LastName"/>
+                               v-model="client.lastName"/>
                     </div>
 
                     <hr>
@@ -29,7 +29,7 @@
                                class="form-control"
                                id="last-chek-in"
                                aria-describedby="last-check-in"
-                               v-model="client.LastCheckIn"/>
+                               v-model="client.lastCheckIn"/>
                     </div>
                 </div>
 
@@ -39,7 +39,7 @@
                         <input type="email"
                                class="form-control"
                                id="email"
-                               v-model="client.Email"/>
+                               v-model="client.email"/>
                     </div>
 
                     <div class="form-group">
@@ -48,7 +48,7 @@
                                class="form-control"
                                id="phone"
                                aria-describedby="phone"
-                               v-model="client.Phone"/>
+                               v-model="client.phone"/>
                     </div>
                 </div>
 

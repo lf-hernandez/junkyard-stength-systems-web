@@ -11,7 +11,7 @@
         <div class="card shadow mt-5">
             <div class="card-body text-left">
                 <template v-if="isEditView">
-                    <ClientDetailsForm :client="client"></ClientDetailsForm>
+                    <ClientDetailsForm :client-id="client.id"></ClientDetailsForm>
                 </template>
                 <template v-else>
                     <div class="d-flex">
