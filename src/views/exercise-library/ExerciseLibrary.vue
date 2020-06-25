@@ -1,5 +1,5 @@
 <template>
-    <div class="exerciseLibrary container pt-5">
+    <div class="exerciseLibrary container">
         <div class="row mb-5">
             <div class="col-4">
                 <h1 class="text-left font-weight-light m-0">Exercise Library</h1>

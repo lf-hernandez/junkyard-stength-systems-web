@@ -1,5 +1,5 @@
 <template>
-    <div class="programs container pt-5">
+    <div class="programs container">
         <div class="mb-5">
             <h1 class="text-left font-weight-light m-0">Programs</h1>
         </div>

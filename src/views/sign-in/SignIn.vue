@@ -1,5 +1,5 @@
 <template>
-    <div class="signIn container pt-5">
+    <div class="signIn container">
             <div class="row">
                 <div class="col-sm-4 col-4 offset-4 text-center">
                     <h1 class="mb-4 font-weight-light">Sign in to JSS</h1>

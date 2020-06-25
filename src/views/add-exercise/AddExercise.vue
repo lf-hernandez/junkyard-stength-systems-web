@@ -1,5 +1,5 @@
 <template>
-    <div class="addExercise container pt-5">
+    <div class="addExercise container">
         <h1 class="font-weight-light">Add Exercise</h1>
 
         <ExerciseDetailsForm :exercise="exercise" class="mt-5"></ExerciseDetailsForm>

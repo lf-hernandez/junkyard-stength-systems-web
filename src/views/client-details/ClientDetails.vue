@@ -1,5 +1,5 @@
 <template>
-    <div class="clientDetails container pt-5"
+    <div class="clientDetails container"
          v-if="client">
         <div class="d-flex justify-content-between">
             <div>

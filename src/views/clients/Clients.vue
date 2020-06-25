@@ -1,5 +1,5 @@
 <template>
-    <div class="clients container pt-5">
+    <div class="clients container">
         <div class="row">
             <div class="col-12 col-sm-5">
                 <h1 class="text-left font-weight-light m-0">Client Management</h1>

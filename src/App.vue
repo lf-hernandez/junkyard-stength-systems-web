@@ -1,10 +1,8 @@
 <template>
-    <div id="app"
-         class="d-flex flex-column h-100">
+    <div id="app" class="d-flex flex-column h-100">
         <AppNav></AppNav>
 
-        <main role="main"
-              class="pb-5">
+        <main role="main">
             <router-view/>
         </main>
 
@@ -36,13 +34,12 @@
         height: 100%;
     }
 
+    body {
+        padding-top: 8rem !important;
+    }
+
     #app {
         font-family: $font-family-roboto;
         background-color: #FAFAFA;
-        height: 100%;
-
-        main {
-            padding-top: 12px;
-        }
     }
 </style>

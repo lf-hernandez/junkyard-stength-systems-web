@@ -1,5 +1,5 @@
 <template>
-    <div class="exerciseDetails container mt-5">
+    <div class="exerciseDetails container">
         <h1 class="font-weight-light mb-5">
             <template v-if="isEditMode">Edit Exercise Details</template>
             <template v-else>View Exercise Details</template>

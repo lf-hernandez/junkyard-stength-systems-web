@@ -1,5 +1,5 @@
 <template>
-  <div class="home bd-content p-5">    
+  <div class="home container pt-5">    
     <h1 class="pt-5">
       Home
     </h1>
