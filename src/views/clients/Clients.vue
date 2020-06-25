@@ -13,7 +13,7 @@
                                aria-label="Search">
                     </div>
                 </form>
-                <button class="btn btn-secondary"
+                <button class="btn btn-primary"
                         type="button"
                         @click="pushAddClientRoute">
                     <font-awesome-icon icon="user-plus"></font-awesome-icon>
