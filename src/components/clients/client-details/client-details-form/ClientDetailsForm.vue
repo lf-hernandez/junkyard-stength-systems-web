@@ -24,10 +24,10 @@
                     <hr>
 
                     <div class="form-group">
-                        <label for="last-chek-in">Last Check-in</label>
+                        <label for="last-check-in">Last Check-in</label>
                         <input type="tel"
                                class="form-control"
-                               id="last-chek-in"
+                               id="last-check-in"
                                aria-describedby="last-check-in"
                                v-model="client.lastCheckIn"/>
                     </div>

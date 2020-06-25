@@ -17,17 +17,6 @@ export default class ClientDetailsForm extends Vue {
     @Action('deleteClient', {namespace}) deleteClientAction: any;
     @Getter('clientById', {namespace}) getClientById: any;
 
-
-    async created() {
-        try {
-            await this.getClients();
-
-        } catch (e) {
-            console.log(e);
-        }
-    }
-
-
     async updateClient() {
         await this.updateClientAction(this.client);
         this.$router.go(-1);

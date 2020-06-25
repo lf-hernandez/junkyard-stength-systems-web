@@ -17,11 +17,13 @@ export default class Clients extends Vue {
     @Action('getClients', {namespace}) getClients: any;
 
     async created() {
-        try {
-            await this.getClients();
-        } catch (e) {
-            console.log(e);
-        }
+       if(this.clients.length === 0) {
+           try {
+               await this.getClients();
+           } catch (e) {
+               console.log(e);
+           }
+       }
     }
 
     async pushAddClientRoute() {

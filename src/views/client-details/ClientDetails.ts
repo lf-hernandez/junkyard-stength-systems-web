@@ -27,7 +27,6 @@ export default class ClientDetails extends Vue {
 
     async created() {
         try {
-            await this.getClients();
             if (this.isNewClient) {
                 this.client = {
                     id: '7',
