@@ -1,12 +1,12 @@
 <template>
-    <footer role="contentinfo" class="footer mt-auto py-3">
+    <footer role="contentinfo" class="footer mt-auto py-4">
         <div class="container-fluid">
             <div class="container">
                 <div class="row align-items-center justify-content-between">
                     <div class="col-auto">
                         <p class="float-left">
                             <font-awesome-icon :icon="['fas', 'code']" class="mx-1"></font-awesome-icon>
-                            <small>Created by <a class="authorAnchor" href="https://github.com/lf-hernandez">Luis Felipe Hernandez</a></small>
+                            Created by <a class="authorAnchor" href="https://github.com/lf-hernandez">Luis Felipe Hernandez</a>
                         </p>
                     </div>
                     <div class="col-auto">
@@ -18,11 +18,7 @@
                         </a>
                     </div>
                     <div class="col-auto">
-                        <p class="float-right">
-                            <small>
-                                &copy;{{new Date().getFullYear()}} Junkyard Strength Systems. All rights reserved.
-                            </small>
-                        </p>
+                        <p class="float-right">&copy;{{new Date().getFullYear()}} Junkyard Strength Systems. All rights reserved.</p>
                     </div>
                 </div>
             </div>
