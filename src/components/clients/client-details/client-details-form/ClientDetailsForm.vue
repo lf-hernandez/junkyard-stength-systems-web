@@ -53,22 +53,29 @@
                 </div>
 
             </div>
-            <div class="row mt-5">
-                <div class="col">
-                    <button type="button"
-                            class="btn btn-block btn-danger">
-                        <font-awesome-icon :icon="['fas', 'trash']"></font-awesome-icon>
-                        Remove
-                    </button>
+            <template v-if="isNewClient">
+                <button class="btn btn-block btn-primary mt-4" type="submit">
+                    <font-awesome-icon class="mr-3" icon="user"></font-awesome-icon>Add
+                </button>
+            </template>
+            <template v-else>
+                <div class="row mt-4">
+                    <div class="col">
+                        <button type="button"
+                                class="btn btn-block btn-danger">
+                            <font-awesome-icon :icon="['fas', 'trash']"></font-awesome-icon>
+                            Remove
+                        </button>
+                    </div>
+                    <div class="col">
+                        <button type="submit"
+                                class="btn btn-block btn-primary">
+                            <font-awesome-icon :icon="['fas', 'save']"></font-awesome-icon>
+                            Save
+                        </button>
+                    </div>
                 </div>
-                <div class="col">
-                    <button type="submit"
-                            class="btn btn-block btn-primary">
-                        <font-awesome-icon :icon="['fas', 'save']"></font-awesome-icon>
-                        Save
-                    </button>
-                </div>
-            </div>
+            </template>
         </form>
     </div>
 </template>

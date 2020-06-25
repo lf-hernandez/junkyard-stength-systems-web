@@ -13,8 +13,8 @@ const namespace = 'clients';
     }
 })
 export default class Clients extends Vue {
-    @State('clients', { namespace }) clients: Array<Client>;
-    @Action('getClients', { namespace }) getClients: any;
+    @State('clients', {namespace}) clients: Array<Client>;
+    @Action('getClients', {namespace}) getClients: any;
 
     async created() {
         try {
@@ -22,5 +22,9 @@ export default class Clients extends Vue {
         } catch (e) {
             console.log(e);
         }
+    }
+
+    async pushAddClientRoute() {
+        await this.$router.push({ name: 'client-details.add' });
     }
 }

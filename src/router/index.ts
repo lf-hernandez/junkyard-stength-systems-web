@@ -33,6 +33,12 @@ const routes: Array<RouteConfig> = [
         component: () => import(/* webpackChunkName: "client-details" */ '../views/client-details/ClientDetails.vue')
     },
     {
+        path: '/clients/new-client/client-details',
+        name: 'client-details.add',
+        props: {isNewClient: true},
+        component: () => import(/* webpackChunkName: "client-details" */ '../views/client-details/ClientDetails.vue')
+    },
+    {
         path: '/clients/:clientId/client-details/edit',
         name: 'client-details.edit',
         props: true,

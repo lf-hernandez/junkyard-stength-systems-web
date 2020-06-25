@@ -16,21 +16,36 @@ const namespace = 'clients';
 })
 export default class ClientDetails extends Vue {
     @Prop() clientId: string;
+    @Prop({default: false}) isNewClient: boolean;
     @State('clients', { namespace }) clients: Array<Client>;
     @Action('getClients', { namespace }) getClients: any;
+    @Action('addClient', {namespace}) addClient: any;
     @Getter('clientById', { namespace }) getClientById: any;
+
+    client: Client | null = null;
+
 
     async created() {
         try {
             await this.getClients();
+            if (this.isNewClient) {
+                this.client = {
+                    id: '7',
+                    firstName: '',
+                    lastName: '',
+                    email: '',
+                    weekNumber: 0,
+                    phone: ''
+                } as Client;
+                this.addClient(this.client);
+            } else {
+                this.client = this.getClientById(this.clientId);
+            }
         } catch(e) {
             console.log(e);
         }
     }
 
-    get client() {
-        return this.getClientById(this.clientId);
-    }
 
     get isEditView() {
         return this.$route.name === 'client-details.edit';

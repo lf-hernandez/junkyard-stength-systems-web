@@ -1,8 +1,11 @@
 <template>
-    <div class="clientDetails container pt-5">
+    <div class="clientDetails container pt-5" v-if="client">
         <h1 class="text-left font-weight-light m-0">
             <template v-if="isEditView">
                 Edit Client Details
+            </template>
+            <template v-if="isNewClient">
+                Add New Client
             </template>
             <template v-else>
                 Client Details
@@ -10,8 +13,8 @@
         </h1>
         <div class="card shadow mt-5">
             <div class="card-body text-left">
-                <template v-if="isEditView">
-                    <ClientDetailsForm :client-id="client.id"></ClientDetailsForm>
+                <template v-if="isEditView || isNewClient">
+                    <ClientDetailsForm :is-new-client="isNewClient" :client-id="client.id"></ClientDetailsForm>
                 </template>
                 <template v-else>
                     <div class="d-flex">
