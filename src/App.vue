@@ -1,5 +1,5 @@
 <template>
-    <div id="app" class="d-flex flex-column h-100">
+    <div id="app">
         <AppNav></AppNav>
 
         <main role="main">
@@ -35,11 +35,16 @@
     }
 
     body {
-        padding-top: 8rem !important;
+        padding-top: 6rem !important;
+        background-color: #FAFAFA;
     }
 
     #app {
         font-family: $font-family-roboto;
-        background-color: #FAFAFA;
+        height: 100%;
+
+        main {
+            height: 100%;
+        }
     }
 </style>
