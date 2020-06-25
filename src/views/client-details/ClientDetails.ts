@@ -16,7 +16,7 @@ const namespace = 'clients';
 })
 export default class ClientDetails extends Vue {
     @Prop() clientId: string;
-    @State('clients', { namespace }) clientsState: ClientsState;
+    @State('clients', { namespace }) clients: Array<Client>;
     @Action('getClients', { namespace }) getClients: any;
     @Getter('clientById', { namespace }) getClientById: any;
 

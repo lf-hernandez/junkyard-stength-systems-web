@@ -7,7 +7,7 @@ import * as data from '../../../../data.json';
 export const actions: ActionTree<ClientsState, RootState> = {
     // TODO Service/API call
     async getClients({ commit }) {
-        const clients = data;
+        const clients = data.clients;
         commit('setClients', clients);
     },
     // TODO Service/API call

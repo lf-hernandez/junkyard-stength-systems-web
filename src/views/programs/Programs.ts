@@ -16,7 +16,7 @@ const namespace = 'clients';
     }
 })
 export default class Programs extends Vue {
-    @State('clients', { namespace }) clientsState: ClientsState;
+    @State('clients', { namespace }) clients: Array<Client>;
     @Action('getClients', { namespace }) getClients: any;
     @Getter('clientFullName', { namespace }) getClientFullName: any;
 
@@ -26,9 +26,5 @@ export default class Programs extends Vue {
         } catch(e) {
             console.log(e);
         }
-    }
-
-    get clients(): Array<Client> {
-        return this.clientsState.default.data;
     }
 }

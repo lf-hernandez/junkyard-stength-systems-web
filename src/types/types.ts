@@ -22,3 +22,7 @@ export interface RootState {
 export interface ClientsState {
     clients: Array<Client>;
 }
+
+export interface ExercisesState {
+    exercises: Array<Exercise>;
+}

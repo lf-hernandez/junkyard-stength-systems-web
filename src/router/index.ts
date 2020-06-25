@@ -58,14 +58,14 @@ const routes: Array<RouteConfig> = [
         component: () => import(/* webpackChunkName: "exercise-library" */ '../views/add-exercise/AddExercise.vue')
     },
     {
-        path: '/exercise-details/:exerciseName',
+        path: '/exercise-details/:id/:slug',
         name: 'exercise-details.view',
         props: true,
         component: () => import(/* webpackChunkName: "exercise-details" */ '../views/exercise-details/ExerciseDetails.vue')
 
     },
     {
-        path: '/exercise-details/:exerciseName/edit',
+        path: '/exercise-details/:id/:slug/edit',
         name: 'exercise-details.edit',
         props: true,
         component: () => import(/* webpackChunkName: "exercise-details" */ '../views/exercise-details/ExerciseDetails.vue')

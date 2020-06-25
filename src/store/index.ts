@@ -4,12 +4,14 @@ import Vuex, { StoreOptions } from 'vuex';
 import { RootState } from '@/types/types';
 
 import { clients } from './modules/clients/index';
+import { exercises } from './modules/exercises/index';
 
 Vue.use(Vuex);
 
 const options: StoreOptions<RootState> = {
     modules: {
-        clients
+        clients,
+        exercises
     }
 };
 
