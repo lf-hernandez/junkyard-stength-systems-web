@@ -1,6 +1,6 @@
 <template>
     <div class="clientDetailsForm">
-        <form>
+        <form @submit.prevent="handleSubmit">
             <div class="row">
                 <div class="col">
                     <div class="form-group">
@@ -54,15 +54,19 @@
 
             </div>
             <template v-if="isNewClient">
-                <button class="btn btn-block btn-primary mt-4" type="submit">
-                    <font-awesome-icon class="mr-3" icon="user"></font-awesome-icon>Add
+                <button class="btn btn-block btn-primary mt-4"
+                        type="submit">
+                    <font-awesome-icon class="mr-3"
+                                       icon="user"></font-awesome-icon>
+                    Add
                 </button>
             </template>
             <template v-else>
                 <div class="row mt-4">
                     <div class="col">
                         <button type="button"
-                                class="btn btn-block btn-danger">
+                                class="btn btn-block btn-danger"
+                                @click="deleteClient">
                             <font-awesome-icon :icon="['fas', 'trash']"></font-awesome-icon>
                             Remove
                         </button>
@@ -79,4 +83,5 @@
         </form>
     </div>
 </template>
-<script lang="ts" src="./ClientDetailsForm.ts"></script>
+<script lang="ts"
+        src="./ClientDetailsForm.ts"></script>

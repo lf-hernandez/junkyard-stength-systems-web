@@ -4,7 +4,7 @@ import { Component, Prop } from 'vue-property-decorator';
 import ClientDetailsForm from '@/components/clients/client-details/client-details-form/ClientDetailsForm.vue';
 import ClientAvatar from '@/components/ui/client-avatar/ClientAvatar.vue';
 import { Action, Getter, State } from 'vuex-class';
-import { Client, ClientsState } from '@/types/types';
+import { Client } from '@/types/types';
 
 const namespace = 'clients';
 
@@ -37,7 +37,6 @@ export default class ClientDetails extends Vue {
                     weekNumber: 0,
                     phone: ''
                 } as Client;
-                this.addClient(this.client);
             } else {
                 this.client = this.getClientById(this.clientId);
             }
