@@ -14,7 +14,7 @@ export default class ClientDetailsForm extends Vue {
     @Action('getClients', {namespace}) getClients: any;
     @Action('addClient', {namespace}) addClientAction: any;
     @Action('updateClient', {namespace}) updateClientAction: any;
-    @Action('deleteClient', {namespace}) deleteClientAction: any;
+
     @Getter('clientById', {namespace}) getClientById: any;
 
     async updateClient() {
@@ -22,10 +22,7 @@ export default class ClientDetailsForm extends Vue {
         this.$router.go(-1);
     }
 
-    async deleteClient() {
-        await this.deleteClientAction(this.client);
-        this.$router.go(-1);
-    }
+
     async addClient() {
         await this.addClientAction(this.client);
         this.$router.go(-1);
@@ -37,5 +34,9 @@ export default class ClientDetailsForm extends Vue {
         } else {
             await this.updateClient();
         }
+    }
+
+    async cancelEdit() {
+        await this.$router.go(-1);
     }
 }

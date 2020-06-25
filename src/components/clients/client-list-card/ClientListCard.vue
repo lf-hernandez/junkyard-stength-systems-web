@@ -9,13 +9,7 @@
                     <p class="m-0">Last Check-in {{ lastCheckIn}}</p>
                 </div>
                 <div class="ml-auto p-4">
-                    <button class="btn btn-lg btn-primary mr-3" @click="pushViewRoute">
-                        <font-awesome-icon :icon="['fas', 'id-card']"></font-awesome-icon> View
-                    </button>
 
-                    <button class="btn btn-lg btn-success" @click="pushEditRoute">
-                        <font-awesome-icon :icon="['fas', 'edit']"></font-awesome-icon> Edit
-                    </button>
                 </div>
             </div>
 

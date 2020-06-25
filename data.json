@@ -1,7 +1,7 @@
 {
   "clients": [
     {
-      "id": 0,
+      "id": "0",
       "firstName": "Simon",
       "lastName": "Bolivar",
       "weekNumber": "7",
@@ -10,7 +10,7 @@
       "phone": "(555) 555-5555"
     },
     {
-      "id": 1,
+      "id": "1",
       "firstName": "Selina",
       "lastName": "Kyle",
       "weekNumber": "3",
@@ -18,7 +18,7 @@
       "phone": "(555) 555-5555"
     },
     {
-      "id": 2,
+      "id": "2",
       "firstName": "Thor",
       "lastName": "Odinson",
       "weekNumber": "10",
@@ -27,7 +27,7 @@
       "phone": "(555) 555-5555"
     },
     {
-      "id": 3,
+      "id": "3",
       "firstName": "Lebron",
       "lastName": "James",
       "weekNumber": "2",
@@ -36,7 +36,7 @@
       "phone": "(555) 555-5555"
     },
     {
-      "id": 4,
+      "id": "4",
       "firstName": "James",
       "lastName": "Howlett",
       "weekNumber": "17",
@@ -45,7 +45,7 @@
       "phone": "(555) 555-5555"
     },
     {
-      "id": 5,
+      "id": "5",
       "firstName": "Wade",
       "lastName": "Wilson",
       "weekNumber": "32",

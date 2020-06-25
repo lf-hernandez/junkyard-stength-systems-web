@@ -17,36 +17,52 @@ const namespace = 'clients';
 export default class ClientDetails extends Vue {
     @Prop() clientId: string;
     @Prop({default: false}) isNewClient: boolean;
-    @State('clients', { namespace }) clients: Array<Client>;
-    @Action('getClients', { namespace }) getClients: any;
+    @State('clients', {namespace}) clients: Array<Client>;
+    @Action('getClients', {namespace}) getClients: any;
     @Action('addClient', {namespace}) addClient: any;
-    @Getter('clientById', { namespace }) getClientById: any;
+    @Action('deleteClient', {namespace}) deleteClientAction: any;
+    @Getter('clientById', {namespace}) getClientById: any;
 
     client: Client | null = null;
 
 
     async created() {
-        try {
-            if (this.isNewClient) {
-                this.client = {
-                    id: '7',
-                    firstName: '',
-                    lastName: '',
-                    email: '',
-                    weekNumber: 0,
-                    phone: ''
-                } as Client;
-            } else {
-                this.client = this.getClientById(this.clientId);
+        if (this.isNewClient) {
+            this.client = {
+                id: '7',
+                firstName: '',
+                lastName: '',
+                email: '',
+                weekNumber: 0,
+                phone: ''
+            } as Client;
+        } else {
+            if (this.clients.length === 0) {
+                await this.getClients();
             }
-        } catch(e) {
-            console.log(e);
+            this.client = this.getClientById(this.clientId);
         }
     }
 
+    returnToClientList() {
+        this.$router.go(-1);
+    }
 
     get isEditView() {
         return this.$route.name === 'client-details.edit';
+    }
+
+    get isDetailsView() {
+        return this.$route.name === 'client-details.view';
+    }
+
+    async deleteClient() {
+        await this.deleteClientAction(this.client);
+        this.$router.go(-1);
+    }
+
+    async pushEditRoute() {
+        await this.$router.push({name: 'client-details.edit', params: { clientId: this.client.id }} );
     }
 
     get initials() {

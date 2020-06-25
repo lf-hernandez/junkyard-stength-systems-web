@@ -5,6 +5,7 @@
                 :key="client.id"
                 :client="client"
                 class="mb-4 shadow-sm rounded"
+                @click.native="pushViewRoute(client.id)"
         ></ClientListCard>
     </div>
 </template>

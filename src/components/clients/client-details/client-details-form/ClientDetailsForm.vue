@@ -65,10 +65,10 @@
                 <div class="row mt-4">
                     <div class="col">
                         <button type="button"
-                                class="btn btn-block btn-danger"
-                                @click="deleteClient">
-                            <font-awesome-icon :icon="['fas', 'trash']"></font-awesome-icon>
-                            Remove
+                                class="btn btn-block btn-secondary"
+                                @click="cancelEdit">
+                            <font-awesome-icon :icon="['fas', 'times']"></font-awesome-icon>
+                            Cancel
                         </button>
                     </div>
                     <div class="col">
