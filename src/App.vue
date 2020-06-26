@@ -29,24 +29,25 @@
 
 <style lang="scss">
     @import "./styles/style.scss";
-    * {
-        margin: 0;
-    }
+
+    @import "./styles/style.scss";
+
     html, body {
-        height: 100%;
-
-        main {
-            height: 100%;
-        }
-    }
-
-    body {
-        padding-top: 6rem !important;
-        background-color: #FAFAFA;
+        height: 100vh;
     }
 
     #app {
         font-family: $font-family-roboto;
-        min-height: 100%;
+        background-color: #FAFAFA;
+        height: 100vh;
+
+
+    }
+
+    main {
+        padding-top: 8rem;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
     }
 </style>
