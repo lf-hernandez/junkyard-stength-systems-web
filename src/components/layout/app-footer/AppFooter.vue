@@ -18,7 +18,7 @@
                         </a>
                     </div>
                     <div class="col-auto">
-                        <p class="float-right">&copy;{{new Date().getFullYear()}} Junkyard Strength Systems. All rights reserved.</p>
+                        <p class="float-right">&copy;<time>{{new Date().getFullYear()}}</time> Junkyard Strength Systems. All rights reserved.</p>
                     </div>
                 </div>
             </div>

@@ -1,6 +1,6 @@
 <template>
-    <div class="signIn container h-100">
-        <div class="row align-items-center justify-content-center h-100">
+    <div class="signIn container">
+        <div class="row align-items-center justify-content-center">
             <div class="col-12 col-lg-4 text-center">
                 <h1 class="mb-4 font-weight-light">Sign in</h1>
                 <SignInForm></SignInForm>

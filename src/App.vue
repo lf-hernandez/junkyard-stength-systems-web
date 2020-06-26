@@ -32,22 +32,25 @@
 
     @import "./styles/style.scss";
 
-    html, body {
+    html {
         height: 100vh;
     }
+
+    body {
+        height: 100vh;
+        padding-top: 5rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    main {
+        padding-top: 4rem;
+        min-height: 100vh;
+    }
+
 
     #app {
         font-family: $font-family-roboto;
         background-color: #FAFAFA;
-        height: 100vh;
-
-
-    }
-
-    main {
-        padding-top: 8rem;
-        display: flex;
-        flex-direction: column;
-        height: 100vh;
     }
 </style>

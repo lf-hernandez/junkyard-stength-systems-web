@@ -22,15 +22,9 @@
             </div>
 
             <div class="flex-column flex-grow">
-                <div class="row row-cols-1 row-cols-md-3">
-                    <div class="col mb-5" v-for="exercise in exercises" :key="exercise.id">
-                        <ExerciseLibraryCard v-on:click.native="onClick(exercise)"
-                                             :exercise="exercise"></ExerciseLibraryCard>
-                    </div>
-                </div>
+               <ExerciseLibraryGrid :exercises="exercises"></ExerciseLibraryGrid>
             </div>
         </div>
     </div>
 </template>
 <script lang="ts" src="./ExerciseLibrary.ts"></script>
-<style lang="scss" src="./ExerciseLibrary.scss"></style>
