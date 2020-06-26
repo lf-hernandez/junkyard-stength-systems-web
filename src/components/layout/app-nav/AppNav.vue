@@ -8,14 +8,15 @@
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navLinks" aria-controls="navLinks" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+
                 <div class="collapse navbar-collapse" id="navLinks">
                     <div class="navbar-nav">
                         <router-link class="nav-item nav-link" :to="{name: 'clients'}">Clients</router-link>
-                        <router-link class="nav-item nav-link" :to="{name: 'exercise-library'}">Exercise Library
-                        </router-link>
+                        <router-link class="nav-item nav-link" :to="{name: 'exercise-library'}">Exercise Library</router-link>
                         <router-link class="nav-item nav-link" :to="{name: 'programs'}">Programs</router-link>
                     </div>
-                    <div class="navbar-nav ml-md-auto">
+
+                    <div class="navbar-nav ml-auto">
                         <router-link class="nav-item nav-link" :to="{name: 'sign-in'}">Sign In</router-link>
                         <router-link class="nav-item nav-link" :to="{name: 'sign-up'}">Sign Up</router-link>
                     </div>
