@@ -29,9 +29,15 @@
 
 <style lang="scss">
     @import "./styles/style.scss";
-
+    * {
+        margin: 0;
+    }
     html, body {
         height: 100%;
+
+        main {
+            height: 100%;
+        }
     }
 
     body {
@@ -41,10 +47,6 @@
 
     #app {
         font-family: $font-family-roboto;
-        height: 100%;
-
-        main {
-            height: 100%;
-        }
+        min-height: 100%;
     }
 </style>

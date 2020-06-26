@@ -1,6 +1,6 @@
 <template>
-    <div class="signUp container">
-        <div class="row">
+    <div class="signUp container h-100">
+        <div class="row h-100 align-items-center justify-content-center">
             <div class="col">
                <SignUpMarketing></SignUpMarketing> 
             </div>
