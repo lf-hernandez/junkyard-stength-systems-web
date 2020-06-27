@@ -1,5 +1,5 @@
 {
-  "name": "junkyard-strength-systems",
+  "name": "junkyard-strength-system",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -8,7 +8,7 @@
     "test:unit": "vue-cli-service test:unit",
     "test:e2e": "vue-cli-service test:e2e",
     "lint": "vue-cli-service lint",
-    "api": "node api/server.js"
+    "api": "node server/server.js"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.13.1",
@@ -20,11 +20,9 @@
     "axios": "^0.19.2",
     "body-parser": "^1.19.0",
     "bootstrap": "^4.5.0",
-    "bootstrap-icons": "^1.0.0-alpha4",
     "core-js": "^3.6.5",
     "cors": "^2.8.5",
     "express": "^4.17.1",
-    "font-awesome": "^4.7.0",
     "jquery": "^3.5.1",
     "moment": "^2.27.0",
     "mongoose": "^5.9.20",
