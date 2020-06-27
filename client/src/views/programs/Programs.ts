@@ -5,7 +5,7 @@ import { Action, Getter, State } from 'vuex-class';
 import { Client, ClientsState } from '@app/types/types';
 
 import ProgramsGrid from '@app/components/programs/programs-grid/ProgramsGrid.vue';
-import ProgramsSideNav from '../../components/programs/programs-side-nav/ProgramsSideNav.vue';
+import ProgramsSideNav from '@/components/programs/programs-side-nav/ProgramsSideNav.vue';
 
 const namespace = 'clients';
 

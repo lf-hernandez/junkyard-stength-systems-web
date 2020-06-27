@@ -1,0 +1,18 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": "./client",
+    "paths": {
+      "@app/*": [
+        "src/*"
+      ]
+    },
+    "include": [
+      "./client/src/**/*.ts",
+      "./client/src/**/*.tsx",
+      "./client/src/**/*.vue",
+      "./client/tests/**/*.ts",
+      "./client/tests/**/*.tsx"
+    ]
+  }
+}
