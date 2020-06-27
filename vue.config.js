@@ -11,6 +11,13 @@ function addStyleResource(rule) {
 }
 
 module.exports = {
+    assetsDir: 'client/src/assets',
+    indexPath: 'client/public/index.html',
+    pages: {
+        index: {
+            entry: 'client/src/main.ts'
+        }
+    },
     chainWebpack: config => {
         const types = ['vue-modules', 'vue', 'normal-modules', 'normal'];
         types.forEach(type => addStyleResource(config.module.rule('scss').oneOf(type)));

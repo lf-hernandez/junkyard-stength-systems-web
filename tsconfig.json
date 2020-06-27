@@ -12,15 +12,13 @@
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "sourceMap": true,
-    "baseUrl": ".",
     "types": [
       "webpack-env",
       "jest"
     ],
+    "baseUrl": ".",
     "paths": {
-      "@/*": [
-        "src/*"
-      ]
+      "@app/*": ["client/src/*"]
     },
     "lib": [
       "esnext",
@@ -30,11 +28,11 @@
     ]
   },
   "include": [
-    "src/**/*.ts",
-    "src/**/*.tsx",
-    "src/**/*.vue",
-    "tests/**/*.ts",
-    "tests/**/*.tsx"
+    "client/src/**/*.ts",
+    "client/src/**/*.tsx",
+    "client/src/**/*.vue",
+    "client/tests/**/*.ts",
+    "client/tests/**/*.tsx"
   ],
   "exclude": [
     "node_modules"
