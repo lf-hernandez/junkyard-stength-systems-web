@@ -2,9 +2,9 @@ import Vue from 'vue';
 import { Component, Prop } from 'vue-property-decorator';
 import { Getter } from 'vuex-class';
 
-import { Client } from '@app/types/types';
+import { Client } from '@/types/types';
 
-import ProgramsGridCard from '@app/components/programs/programs-gid-card/ProgramsGridCard.vue';
+import ProgramsGridCard from '@/components/programs/programs-gid-card/ProgramsGridCard.vue';
 
 const namespace = 'clients';
 

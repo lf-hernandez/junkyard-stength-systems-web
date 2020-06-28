@@ -2,7 +2,7 @@ import Vue from 'vue';
 import { Component, Prop } from 'vue-property-decorator';
 
 import { Action, Getter, State } from 'vuex-class';
-import { Client } from '@app/types/types';
+import { Client } from '@/types/types';
 
 const namespace = 'clients';
 

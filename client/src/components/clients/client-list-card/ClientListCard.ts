@@ -1,9 +1,9 @@
 import Vue from 'vue';
 import { Component, Prop } from 'vue-property-decorator';
 
-import ClientAvatar from '@app/components/ui/client-avatar/ClientAvatar.vue';
+import ClientAvatar from '@/components/ui/client-avatar/ClientAvatar.vue';
 
-import { Client } from '@app/types/types';
+import { Client } from '@/types/types';
 
 @Component({
     components: {

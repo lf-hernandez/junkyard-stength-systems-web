@@ -1,8 +1,7 @@
 import Vue from 'vue';
 import { Component, Prop } from 'vue-property-decorator';
-
-import ClientListCard from '@app/components/clients/client-list-card/ClientListCard.vue';
-import { Client } from '@app/types/types';
+import ClientListCard from '@/components/clients/client-list-card/ClientListCard.vue';
+import { Client } from '@/types/types';
 
 @Component({
     components: {

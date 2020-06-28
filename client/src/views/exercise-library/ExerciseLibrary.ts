@@ -1,10 +1,10 @@
 import Vue from 'vue';
 import { Component } from 'vue-property-decorator';
 
-import ExerciseLibrarySideNav from '@app/components/exercise-library/exercise-side-nav/ExerciseLibrarySideNav.vue';
-import ExerciseLibraryGrid from '@app/components/exercise-library/exercise-library-grid/ExerciseLibraryGrid.vue';
+import ExerciseLibrarySideNav from '@/components/exercise-library/exercise-side-nav/ExerciseLibrarySideNav.vue';
+import ExerciseLibraryGrid from '@/components/exercise-library/exercise-library-grid/ExerciseLibraryGrid.vue';
 
-import { Exercise } from '@app/types/types';
+import { Exercise } from '@/types/types';
 import { Action, State } from 'vuex-class';
 
 const namespace = 'exercises';

@@ -1,6 +1,6 @@
 import Vue from 'vue';
 import { Component } from 'vue-property-decorator';
-import ExerciseDetailsForm from '@app/components/exercise-details/exercise-details-form/ExerciseDetailsForm.vue';
+import ExerciseDetailsForm from '@/components/exercise-details/exercise-details-form/ExerciseDetailsForm.vue';
 
 @Component({
     components: {

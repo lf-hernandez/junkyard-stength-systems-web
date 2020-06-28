@@ -3,16 +3,14 @@
   "compilerOptions": {
     "baseUrl": "./client",
     "paths": {
-      "@app/*": [
-        "src/*"
-      ]
-    },
-    "include": [
-      "./client/src/**/*.ts",
-      "./client/src/**/*.tsx",
-      "./client/src/**/*.vue",
-      "./client/tests/**/*.ts",
-      "./client/tests/**/*.tsx"
-    ]
-  }
+      "@/*": ["src/*"]
+    }
+  },
+  "include": [
+    "clients/src/**/*.ts",
+    "clients/src/**/*.tsx",
+    "clients/src/**/*.vue",
+    "clients/tests/**/*.ts",
+    "clients/tests/**/*.tsx"
+  ]
 }

@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import { Component, Prop } from 'vue-property-decorator';
-import ExerciseDetailsForm from '@app/components/exercise-details/exercise-details-form/ExerciseDetailsForm.vue';
-import ExerciseDetailsCard from '@app/components/exercise-details/exercise-details-card/ExerciseDetailsCard.vue';
+import ExerciseDetailsForm from '@/components/exercise-details/exercise-details-form/ExerciseDetailsForm.vue';
+import ExerciseDetailsCard from '@/components/exercise-details/exercise-details-card/ExerciseDetailsCard.vue';
 import { Action, Getter } from 'vuex-class';
 
 const namespace = 'exercises';

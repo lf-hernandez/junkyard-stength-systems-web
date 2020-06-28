@@ -14,8 +14,8 @@
     import Vue from 'vue';
     import { Component } from 'vue-property-decorator';
 
-    import AppNav from '@app/components/layout/app-nav/AppNav.vue';
-    import AppFooter from '@app/components/layout/app-footer/AppFooter.vue';
+    import AppNav from '@/components/layout/app-nav/AppNav.vue';
+    import AppFooter from '@/components/layout/app-footer/AppFooter.vue';
 
     @Component({
         components: {

@@ -1,9 +1,9 @@
 import Vue from 'vue';
 import { Component, Prop } from 'vue-property-decorator';
 
-import ExerciseLibraryCard from '@app/components/exercise-library/exercise-library-card/ExerciseLibraryCard.vue';
+import ExerciseLibraryCard from '@/components/exercise-library/exercise-library-card/ExerciseLibraryCard.vue';
 
-import { Exercise } from '@app/types/types';
+import { Exercise } from '@/types/types';
 
 @Component({
     components: {

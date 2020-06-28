@@ -1,10 +1,10 @@
 import Vue from 'vue';
 import { Component, Prop } from 'vue-property-decorator';
 
-import ClientDetailsForm from '@app/components/clients/client-details/client-details-form/ClientDetailsForm.vue';
-import ClientAvatar from '@app/components/ui/client-avatar/ClientAvatar.vue';
+import ClientDetailsForm from '@/components/clients/client-details/client-details-form/ClientDetailsForm.vue';
+import ClientAvatar from '@/components/ui/client-avatar/ClientAvatar.vue';
 import { Action, Getter, State } from 'vuex-class';
-import { Client } from '@app/types/types';
+import { Client } from '@/types/types';
 
 const namespace = 'clients';
 

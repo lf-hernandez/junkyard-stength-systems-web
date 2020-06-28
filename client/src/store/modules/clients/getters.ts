@@ -1,5 +1,5 @@
 import { GetterTree } from 'vuex';
-import { Client, ClientsState, RootState } from '@app/types/types';
+import { Client, ClientsState, RootState } from '@/types/types';
 
 export const getters: GetterTree<ClientsState, RootState> = {
     clientById: (state) => (id: string) => {

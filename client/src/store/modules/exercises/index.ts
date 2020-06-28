@@ -1,10 +1,10 @@
 import { Module } from 'vuex';
-import { state } from '@app/store/modules/exercises/state';
-import { getters } from '@app/store/modules/exercises/getters';
-import { mutations } from '@app/store/modules/exercises/mutations';
-import { actions } from '@app/store/modules/exercises/actions';
+import { state } from '@/store/modules/exercises/state';
+import { getters } from '@/store/modules/exercises/getters';
+import { mutations } from '@/store/modules/exercises/mutations';
+import { actions } from '@/store/modules/exercises/actions';
 
-import { ExercisesState, RootState } from '@app/types/types';
+import { ExercisesState, RootState } from '@/types/types';
 
 const namespaced = true;
 

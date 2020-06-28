@@ -1,6 +1,6 @@
 import { ActionTree } from 'vuex';
 
-import { ExercisesState, RootState } from '@app/types/types';
+import { ExercisesState, RootState } from '@/types/types';
 
 import * as data from '../../../../data.json';
 

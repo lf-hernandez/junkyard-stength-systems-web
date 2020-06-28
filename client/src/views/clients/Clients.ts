@@ -1,9 +1,11 @@
 import Vue from 'vue';
 import { Component } from 'vue-property-decorator';
 
-import ClientList from '@app/components/clients/client-list/ClientList.vue';
 import { Action, State } from 'vuex-class';
-import { Client } from '@app/types/types';
+
+import { Client } from '@/types/types';
+import ClientList from '@/components/clients/client-list/ClientList.vue';
+
 
 const namespace = 'clients';
 

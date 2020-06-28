@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import { Component, Prop } from 'vue-property-decorator';
 
-import { Exercise } from '@app/types/types';
+import { Exercise } from '@/types/types';
 
 @Component
 export default class ExerciseDetailsForm extends Vue {
