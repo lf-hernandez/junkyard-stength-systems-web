@@ -10,7 +10,7 @@
 //
 //
 // -- This is a parent command --
-// Cypress.Commands.add("sign-in", (email, password) => { ... })
+// Cypress.Commands.add("login", (email, password) => { ... })
 //
 //
 // -- This is a child command --
