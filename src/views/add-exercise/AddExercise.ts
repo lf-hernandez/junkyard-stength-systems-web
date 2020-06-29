@@ -11,7 +11,12 @@ export default class AddExercise extends Vue {
     exercise = {};
 
     created() {
-        this.exercise = {id: '', name: '', description: '', movementType: '', muscles: []};
+        this.exercise = {
+            id: '',
+            name: '',
+            description: '',
+            movementType: '',
+            muscles: []
+        };
     }
-
 }

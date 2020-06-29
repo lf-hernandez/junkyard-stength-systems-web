@@ -16,8 +16,8 @@ const namespace = 'exercises';
     }
 })
 export default class ExerciseLibrary extends Vue {
-    @State('exercises', {namespace}) exercises: Array<Exercise>;
-    @Action('getExercises', {namespace}) getExercises: any;
+    @State('exercises', { namespace }) exercises: Array<Exercise> | undefined;
+    @Action('getExercises', { namespace }) getExercises;
 
     async created() {
         try {
@@ -25,10 +25,9 @@ export default class ExerciseLibrary extends Vue {
         } catch (e) {
             console.log(e);
         }
-
     }
 
     async onAddExercise() {
-        await this.$router.push({name: 'exercise-library.add'});
+        await this.$router.push({ name: 'exercise-library.add' });
     }
 }

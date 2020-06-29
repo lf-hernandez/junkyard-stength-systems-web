@@ -8,9 +8,13 @@
             </div>
             <div class="card-body p-0">
                 <div class="list-group">
-                    <a class="list-group-item list-group-item-action" href="#" v-for="muscleGroup in muscleGroups"
-                       :key="muscleGroup">
-                        {{muscleGroup}}
+                    <a
+                        class="list-group-item list-group-item-action"
+                        href="#"
+                        v-for="muscleGroup in muscleGroups"
+                        :key="muscleGroup"
+                    >
+                        {{ muscleGroup }}
                     </a>
                 </div>
             </div>

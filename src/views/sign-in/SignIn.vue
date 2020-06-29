@@ -4,9 +4,12 @@
             <div class="col-12 col-lg-4 text-center">
                 <h1 class="mb-4 font-weight-light">Sign in</h1>
                 <SignInForm></SignInForm>
-                <hr class="my-4">
-                <p>New to JSS?
-                    <router-link :to="{name: 'sign-up'}">Create an account.</router-link>
+                <hr class="my-4" />
+                <p>
+                    New to JSS?
+                    <router-link :to="{ name: 'sign-up' }"
+                        >Create an account.</router-link
+                    >
                 </p>
             </div>
         </div>

@@ -14,5 +14,4 @@ export default class ExerciseLibrarySideNav extends Vue {
         'Abs',
         'SITS'
     ];
-
 }

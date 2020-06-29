@@ -15,16 +15,15 @@ const namespace = 'clients';
     }
 })
 export default class ClientDetails extends Vue {
-    @Prop() clientId: string;
-    @Prop({default: false}) isNewClient: boolean;
-    @State('clients', {namespace}) clients: Array<Client>;
-    @Action('getClients', {namespace}) getClients: any;
-    @Action('addClient', {namespace}) addClient: any;
-    @Action('deleteClient', {namespace}) deleteClientAction: any;
-    @Getter('clientById', {namespace}) getClientById: any;
+    @Prop() clientId: string | undefined;
+    @Prop({ default: false }) isNewClient: boolean | undefined;
+    @State('clients', { namespace }) clients: Array<Client> | undefined;
+    @Action('getClients', { namespace }) getClients;
+    @Action('addClient', { namespace }) addClient;
+    @Action('deleteClient', { namespace }) deleteClientAction;
+    @Getter('clientById', { namespace }) getClientById;
 
     client: Client | null = null;
-
 
     async created() {
         if (this.isNewClient) {
@@ -62,7 +61,10 @@ export default class ClientDetails extends Vue {
     }
 
     async pushEditRoute() {
-        await this.$router.push({name: 'client-details.edit', params: { clientId: this.client.id }} );
+        await this.$router.push({
+            name: 'client-details.edit',
+            params: { clientId: this.client.id }
+        });
     }
 
     get initials() {

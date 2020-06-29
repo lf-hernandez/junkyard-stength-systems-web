@@ -9,12 +9,18 @@ export const mutations: MutationTree<ExercisesState> = {
         state.exercises.push(newExercise);
     },
     updateClient(state, updatedExercise: Exercise) {
-        const index = state.exercises.findIndex(exercise => exercise.id === updatedExercise.id);
+        const index = state.exercises.findIndex(
+            exercise => exercise.id === updatedExercise.id
+        );
 
         state.exercises.splice(index, 1, updatedExercise);
         state.exercises = [...state.exercises];
     },
     deleteClient(state, deletedExercise: Exercise) {
-        state.exercises = [...state.exercises.filter(exercise => exercise.id !== deletedExercise.id)];
+        state.exercises = [
+            ...state.exercises.filter(
+                exercise => exercise.id !== deletedExercise.id
+            )
+        ];
     }
 };

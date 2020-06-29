@@ -3,7 +3,7 @@
         <AppNav></AppNav>
 
         <main role="main">
-            <router-view/>
+            <router-view />
         </main>
 
         <AppFooter></AppFooter>
@@ -11,46 +11,44 @@
 </template>
 
 <script lang="ts">
-    import Vue from 'vue';
-    import { Component } from 'vue-property-decorator';
+import Vue from 'vue';
+import { Component } from 'vue-property-decorator';
 
-    import AppNav from '@/components/layout/app-nav/AppNav.vue';
-    import AppFooter from '@/components/layout/app-footer/AppFooter.vue';
+import AppNav from '@/components/layout/app-nav/AppNav.vue';
+import AppFooter from '@/components/layout/app-footer/AppFooter.vue';
 
-    @Component({
-        components: {
-            AppNav,
-            AppFooter
-        }
-    })
-    export default class App extends Vue {
+@Component({
+    components: {
+        AppNav,
+        AppFooter
     }
+})
+export default class App extends Vue {}
 </script>
 
 <style lang="scss">
-    @import "./styles/style.scss";
+@import './styles/style.scss';
 
-    @import "./styles/style.scss";
+@import './styles/style.scss';
 
-    html {
-        height: 100vh;
-    }
+html {
+    height: 100vh;
+}
 
-    body {
-        height: 100vh;
-        padding-top: 5rem;
-        display: flex;
-        flex-direction: column;
-    }
+body {
+    height: 100vh;
+    padding-top: 5rem;
+    display: flex;
+    flex-direction: column;
+}
 
-    main {
-        padding-top: 4rem;
-        min-height: 100vh;
-    }
+main {
+    padding-top: 4rem;
+    min-height: 100vh;
+}
 
-
-    #app {
-        font-family: $font-family-roboto;
-        background-color: #FAFAFA;
-    }
+#app {
+    font-family: $font-family-roboto;
+    background-color: #fafafa;
+}
 </style>

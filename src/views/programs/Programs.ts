@@ -2,7 +2,7 @@ import Vue from 'vue';
 import { Component } from 'vue-property-decorator';
 
 import { Action, Getter, State } from 'vuex-class';
-import { Client, ClientsState } from '@/types/types';
+import { Client } from '@/types/types';
 
 import ProgramsGrid from '@/components/programs/programs-grid/ProgramsGrid.vue';
 import ProgramsSideNav from '@/components/programs/programs-side-nav/ProgramsSideNav.vue';
@@ -16,14 +16,14 @@ const namespace = 'clients';
     }
 })
 export default class Programs extends Vue {
-    @State('clients', { namespace }) clients: Array<Client>;
-    @Action('getClients', { namespace }) getClients: any;
-    @Getter('clientFullName', { namespace }) getClientFullName: any;
+    @State('clients', { namespace }) clients: Array<Client> | undefined;
+    @Action('getClients', { namespace }) getClients;
+    @Getter('clientFullName', { namespace }) getClientFullName;
 
     async created() {
         try {
             await this.getClients();
-        } catch(e) {
+        } catch (e) {
             console.log(e);
         }
     }

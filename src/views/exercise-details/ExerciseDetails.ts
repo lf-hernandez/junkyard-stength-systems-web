@@ -2,7 +2,7 @@ import Vue from 'vue';
 import { Component, Prop } from 'vue-property-decorator';
 import ExerciseDetailsForm from '@/components/exercise-details/exercise-details-form/ExerciseDetailsForm.vue';
 import ExerciseDetailsCard from '@/components/exercise-details/exercise-details-card/ExerciseDetailsCard.vue';
-import { Action, Getter } from 'vuex-class';
+import { Getter } from 'vuex-class';
 
 const namespace = 'exercises';
 
@@ -13,8 +13,8 @@ const namespace = 'exercises';
     }
 })
 export default class ExerciseDetails extends Vue {
-    @Prop() id: string;
-    @Getter('exerciseById', { namespace }) getExerciseById: any;
+    @Prop() id: string | undefined;
+    @Getter('exerciseById', { namespace }) getExerciseById;
 
     exercise = {};
 
@@ -23,6 +23,6 @@ export default class ExerciseDetails extends Vue {
     }
 
     get isEditMode() {
-        return this.$route.name === 'exercise-details.edit'
+        return this.$route.name === 'exercise-details.edit';
     }
 }

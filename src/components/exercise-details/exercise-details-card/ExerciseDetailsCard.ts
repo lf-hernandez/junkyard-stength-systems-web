@@ -1,9 +1,10 @@
 import Vue from 'vue';
 import { Component, Prop } from 'vue-property-decorator';
+import { Exercise } from '@/types/types';
 
 @Component
 export default class ExerciseDetailsCard extends Vue {
-    @Prop() exercise: any;
+    @Prop() exercise: Exercise | undefined;
 
     muscles = [
         'Shoulders',
@@ -26,8 +27,14 @@ export default class ExerciseDetailsCard extends Vue {
     }
 
     async onEdit() {
-        const normalizedSlug = this.exercise.name.split(' ').join('-').toLowerCase();
-        await this.$router.push({name: 'exercise-details.edit', params: {id: this.exercise.id, slug: normalizedSlug}});
+        const normalizedSlug = this.exercise.name
+            .split(' ')
+            .join('-')
+            .toLowerCase();
+        await this.$router.push({
+            name: 'exercise-details.edit',
+            params: { id: this.exercise.id, slug: normalizedSlug }
+        });
     }
 
     onDelete() {

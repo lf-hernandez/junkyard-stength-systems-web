@@ -38,10 +38,12 @@ export default class ExerciseDetailsForm extends Vue {
         {
             value: 'Triceps',
             name: 'triceps'
-        }, {
+        },
+        {
             value: 'Biceps',
             name: 'biceps'
-        }, {
+        },
+        {
             value: 'Back',
             name: 'back'
         },

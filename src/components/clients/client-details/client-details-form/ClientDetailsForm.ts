@@ -8,20 +8,18 @@ const namespace = 'clients';
 
 @Component
 export default class ClientDetailsForm extends Vue {
-    @Prop() client: Client;
-    @Prop({default: false}) isNewClient: boolean;
-    @State('clients', {namespace}) clients: Array<Client>;
-    @Action('getClients', {namespace}) getClients: any;
-    @Action('addClient', {namespace}) addClientAction: any;
-    @Action('updateClient', {namespace}) updateClientAction: any;
-
-    @Getter('clientById', {namespace}) getClientById: any;
+    @Prop() client: Client | undefined;
+    @Prop({ default: false }) isNewClient: boolean | undefined;
+    @State('clients', { namespace }) clients: Array<Client> | undefined;
+    @Action('getClients', { namespace }) getClients: undefined;
+    @Action('addClient', { namespace }) addClientAction;
+    @Action('updateClient', { namespace }) updateClientAction;
+    @Getter('clientById', { namespace }) getClientById;
 
     async updateClient() {
         await this.updateClientAction(this.client);
         this.$router.go(-1);
     }
-
 
     async addClient() {
         await this.addClientAction(this.client);
@@ -29,14 +27,14 @@ export default class ClientDetailsForm extends Vue {
     }
 
     async handleSubmit() {
-        if(this.isNewClient) {
+        if (this.isNewClient) {
             await this.addClient();
         } else {
             await this.updateClient();
         }
     }
 
-    async cancelEdit() {
-        await this.$router.go(-1);
+    cancelEdit() {
+        this.$router.go(-1);
     }
 }

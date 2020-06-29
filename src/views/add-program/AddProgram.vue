@@ -1,6 +1,4 @@
 <template>
-    <div class="addProgram">
-
-    </div>
+    <div class="addProgram"></div>
 </template>
 <script lang="ts" src="./AddProgram.ts"></script>

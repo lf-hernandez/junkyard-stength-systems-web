@@ -14,7 +14,10 @@ export default class ExerciseLibraryGrid extends Vue {
     @Prop() exercises: Array<Exercise>;
 
     async pushExerciseDetailsRoute(exercise: Exercise) {
-        const normalizedSlug = exercise.name.split(' ').join('-').toLowerCase();
+        const normalizedSlug = exercise.name
+            .split(' ')
+            .join('-')
+            .toLowerCase();
         await this.$router.push({
             name: 'exercise-details.view',
             params: {

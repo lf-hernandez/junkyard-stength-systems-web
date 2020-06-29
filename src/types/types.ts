@@ -17,6 +17,7 @@ export interface Client {
 }
 
 export interface RootState {
+    
 }
 
 export interface ClientsState {
