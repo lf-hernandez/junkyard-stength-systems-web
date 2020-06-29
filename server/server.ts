@@ -1,8 +1,8 @@
-const express = require('express');
-const path = require('path');
-const cors = require('cors');
-const bodyParser = require('body-parser');
-const morgan = require('morgan');
+import express from 'express';
+import path from 'path';
+import cors from 'cors';
+import bodyParser from 'body-parser';
+import morgan from 'morgan';
 
 const app = express();
 
@@ -17,6 +17,7 @@ app.get('/', (req, res) => {
 });
 
 const port = process.env.PORT || 4000;
+
 app.listen(port, () => {
     console.log(`listening on ${port}`);
 });
