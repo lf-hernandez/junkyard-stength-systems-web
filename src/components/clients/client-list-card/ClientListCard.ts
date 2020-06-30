@@ -11,7 +11,7 @@ import { Client } from '@/types/types';
     }
 })
 export default class ClientListCard extends Vue {
-    @Prop() client: Client;
+    @Prop() client: Client | undefined;
 
     get fullName() {
         return `${this.client.firstName} ${this.client.lastName}`;

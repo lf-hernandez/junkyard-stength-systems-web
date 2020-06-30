@@ -17,8 +17,8 @@ export default class ProgramsGrid extends Vue {
     @Prop() clients: Array<Client> | undefined;
     @Getter('clientFullName', { namespace }) getClientFullName;
 
-    async pushProgramDetailsRoute(id: string) {
-        await this.$router.push({
+    pushProgramDetailsRoute(id: string) {
+        this.$router.push({
             name: 'client-program-details.view',
             params: { clientId: id }
         });

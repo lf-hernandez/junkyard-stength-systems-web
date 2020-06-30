@@ -9,10 +9,10 @@ import { Client } from '@/types/types';
     }
 })
 export default class ClientList extends Vue {
-    @Prop() clients: Array<Client>;
+    @Prop() clients: Array<Client> | undefined;
 
-    async pushViewRoute(id: string) {
-        await this.$router.push({
+    pushViewRoute(id: string) {
+        this.$router.push({
             name: 'client-details.view',
             params: { clientId: id }
         });

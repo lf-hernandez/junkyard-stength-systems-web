@@ -11,14 +11,14 @@ import { Exercise } from '@/types/types';
     }
 })
 export default class ExerciseLibraryGrid extends Vue {
-    @Prop() exercises: Array<Exercise>;
+    @Prop() exercises: Array<Exercise> | undefined;
 
-    async pushExerciseDetailsRoute(exercise: Exercise) {
+    pushExerciseDetailsRoute(exercise: Exercise) {
         const normalizedSlug = exercise.name
             .split(' ')
             .join('-')
             .toLowerCase();
-        await this.$router.push({
+        this.$router.push({
             name: 'exercise-details.view',
             params: {
                 id: exercise.id,

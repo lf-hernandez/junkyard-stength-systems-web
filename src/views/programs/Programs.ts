@@ -27,4 +27,8 @@ export default class Programs extends Vue {
             console.log(e);
         }
     }
+
+    pushAddProgramRoute() {
+        this.$router.push({name: 'add-program'})
+    }
 }

@@ -17,7 +17,7 @@ export interface Client {
 }
 
 export interface RootState {
-    
+    isLoaded: boolean;
 }
 
 export interface ClientsState {

@@ -21,13 +21,15 @@ export default class ExerciseLibrary extends Vue {
 
     async created() {
         try {
-            await this.getExercises();
+            if(this.exercises.length < 1) {
+                await this.getExercises();
+            }
         } catch (e) {
             console.log(e);
         }
     }
 
-    async onAddExercise() {
-        await this.$router.push({ name: 'exercise-library.add' });
+    onAddExercise() {
+        this.$router.push({ name: 'exercise-library.add' });
     }
 }

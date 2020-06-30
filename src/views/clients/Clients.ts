@@ -27,7 +27,7 @@ export default class Clients extends Vue {
         }
     }
 
-    async pushAddClientRoute() {
-        await this.$router.push({ name: 'client-details.add' });
+    pushAddClientRoute() {
+        this.$router.push({ name: 'client-details.add' });
     }
 }

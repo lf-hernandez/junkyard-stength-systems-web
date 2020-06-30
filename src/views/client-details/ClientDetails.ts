@@ -60,8 +60,8 @@ export default class ClientDetails extends Vue {
         this.$router.go(-1);
     }
 
-    async pushEditRoute() {
-        await this.$router.push({
+    pushEditRoute() {
+        this.$router.push({
             name: 'client-details.edit',
             params: { clientId: this.client.id }
         });

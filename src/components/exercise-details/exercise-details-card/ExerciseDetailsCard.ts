@@ -26,12 +26,12 @@ export default class ExerciseDetailsCard extends Vue {
         return muscles.includes(muscle);
     }
 
-    async onEdit() {
+    onEdit() {
         const normalizedSlug = this.exercise.name
             .split(' ')
             .join('-')
             .toLowerCase();
-        await this.$router.push({
+        this.$router.push({
             name: 'exercise-details.edit',
             params: { id: this.exercise.id, slug: normalizedSlug }
         });
