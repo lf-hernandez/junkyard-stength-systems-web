@@ -37,7 +37,7 @@ const routes: Array<RouteConfig> = [
         props: true,
         component: () =>
             import(
-                /* webpackChunkName: "client-details" */ '../views/client-details/ClientDetails.vue'
+                /* webpackChunkName: "clients" */ '../views/client-details/ClientDetails.vue'
             )
     },
     {
@@ -46,7 +46,7 @@ const routes: Array<RouteConfig> = [
         props: { isNewClient: true },
         component: () =>
             import(
-                /* webpackChunkName: "client-details" */ '../views/client-details/ClientDetails.vue'
+                /* webpackChunkName: "clients" */ '../views/client-details/ClientDetails.vue'
             )
     },
     {
@@ -92,7 +92,7 @@ const routes: Array<RouteConfig> = [
         props: true,
         component: () =>
             import(
-                /* webpackChunkName: "exercise-details" */ '../views/exercise-details/ExerciseDetails.vue'
+                /* webpackChunkName: "exercise-library" */ '../views/exercise-details/ExerciseDetails.vue'
             )
     },
     {
@@ -101,7 +101,7 @@ const routes: Array<RouteConfig> = [
         props: true,
         component: () =>
             import(
-                /* webpackChunkName: "exercise-details" */ '../views/exercise-details/ExerciseDetails.vue'
+                /* webpackChunkName: "exercise-library" */ '../views/exercise-details/ExerciseDetails.vue'
             )
     },
     {
@@ -111,57 +111,34 @@ const routes: Array<RouteConfig> = [
             import(
                 /* webpackChunkName: "programs" */ '../views/programs/Programs.vue'
             )
+    },
+    {
+        path: '/add-program',
+        name: 'add-program',
+        redirect: 'add-program/program-details',
+        component: () =>
+            import(
+                /* webpackChunkName: "programs" */ '../views/add-program/AddProgram.vue'
+            ),
+            children: [
+                {
+                    path: '/add-program/program-details',
+                    name: 'add-program.program-details',
+                    component: () =>
+                        import(
+                            /* webpackChunkName: "programs" */ '../components/programs/program-details-form/ProgramDetailsForm.vue'
+                        )
+                },
+                {
+                    path: '/add-program/program-design',
+                    name: 'add-program.program-design',
+                    component: () =>
+                        import(
+                            /* webpackChunkName: "programs" */ '../components/programs/program-design-form/ProgramDesignForm.vue'
+                        )
+                },
+            ]
     }
-    // {
-    //   path: '/about',
-    //   name: 'about',
-    //   // route level code-splitting
-    //   // this generates a separate chunk (about.[hash].js) for this route
-    //   // which is lazy-loaded when the route is visited.
-    //   component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
-    // },
-    //   router.get('/clients', (req, res, next) => {
-    //     res.send('clients list');
-    // });
-
-    // router.get('clients/:id', (req, res, next) => {
-    //     res.send('client by id');
-    // });
-
-    // router.get('clients/:id/edit', (req, res, next) => {
-    //     res.send('edit client by id');
-    // })
-
-    //   router.get('/exercises', (req, res, next) => {
-    //     res.send('exercises');
-    // });
-
-    // router.get('exercises/muscle/:muscle-name', (req, res, next) => {
-    //     res.send('exercises by muscle name');
-    // });
-
-    // router.get('exercises/:exercise-name', (req, res, next) => {
-    //     res.send('exercise by name');
-    // });
-
-    // router.get('exercises/:exercise-name/edit', (req, res, next) => {
-    //     res.send('edit exercise by name');
-    // });
-
-    // router.get('exercises/add', (req, res, next) => {
-    //     res.send('add new exercise');
-    // })
-    // router.get('/programs/:id', (req, res, next) => {
-    //   res.send('programs by id');
-    // });
-
-    // router.get('programs/create', (req, res, next) => {
-    //   res.send('create programs');
-    // });
-
-    // router.get('programs/:id/edit', (req, res, next) => {
-    //   res.send('edit programs by id');
-    // })
 ];
 
 const router = new VueRouter({

@@ -5,7 +5,7 @@ import { Exercise } from '@/types/types';
 
 @Component
 export default class ExerciseDetailsForm extends Vue {
-    @Prop() exercise: Exercise;
+    @Prop() exercise: Exercise | undefined;
 
     movementTypes: Array<object> = [
         {
