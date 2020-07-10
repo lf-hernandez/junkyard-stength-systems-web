@@ -22,21 +22,19 @@
             <div class="flex-column flex-shrink mr-4">
                 <ExerciseLibrarySideNav></ExerciseLibrarySideNav>
 
-                <button
-                    class="btn btn-block btn-lg btn-dark mt-4"
-                    @click="onAddExercise"
-                >
-                    <font-awesome-icon
-                        :icon="['fas', 'plus']"
-                    ></font-awesome-icon>
+                <button class="btn btn-block btn-lg btn-dark mt-4" @click="onAddExercise">
+                    <font-awesome-icon :icon="['fas', 'plus']"></font-awesome-icon>
                     Add Exercise
                 </button>
             </div>
 
             <div class="flex-column flex-grow">
-                <ExerciseLibraryGrid
-                    :exercises="exercises"
-                ></ExerciseLibraryGrid>
+                <template v-if="category">
+                    <ExerciseLibraryGrid :exercises="exercisesByCategory(category)"></ExerciseLibraryGrid>
+                </template>
+                <template v-else>
+                    <ExerciseLibraryGrid :exercises="exercises"></ExerciseLibraryGrid>
+                </template>
             </div>
         </div>
     </div>

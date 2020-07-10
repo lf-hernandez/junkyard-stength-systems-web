@@ -56,17 +56,14 @@ const routes: Array<RouteConfig> = [
             import(
                 /* webpackChunkName: "exercise-library" */ '../views/exercise-library/ExerciseLibrary.vue'
             ),
-        children: [
-            {
-                path: ':muscle-group-name',
-                name: 'exercise-library.muscle-group',
-                props: true,
-                component: () =>
-                    import(
+    }, {
+        path: '/exercise-library/:category',
+        name: 'exercise-library.category',
+        props: true,
+        component: () =>
+            import(
                         /* webpackChunkName: "exercise-library" */ '../views/exercise-library/ExerciseLibrary.vue'
-                    )
-            }
-        ]
+            )
     },
     {
         path: '/exercise-library/add',

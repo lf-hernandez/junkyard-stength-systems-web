@@ -4,6 +4,7 @@ import { Component } from 'vue-property-decorator';
 @Component
 export default class ExerciseLibrarySideNav extends Vue {
     muscleGroups: Array<string> = [
+        'All',
         'Chest',
         'Triceps',
         'Biceps',

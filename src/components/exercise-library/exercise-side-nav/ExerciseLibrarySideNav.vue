@@ -8,14 +8,17 @@
             </div>
             <div class="card-body p-0">
                 <div class="list-group">
-                    <a
+                    <router-link
                         class="list-group-item list-group-item-action"
-                        href="#"
+                        :to="{
+                            name: 'exercise-library.category',
+                            params: { category: muscleGroup.toLowerCase() }
+                        }"
                         v-for="muscleGroup in muscleGroups"
                         :key="muscleGroup"
                     >
                         {{ muscleGroup }}
-                    </a>
+                    </router-link>
                 </div>
             </div>
         </div>
