@@ -16,9 +16,9 @@ const namespace = 'clients';
     }
 })
 export default class Programs extends Vue {
-    @State('clients', { namespace }) clients: Array<Client> | undefined;
-    @Action('getClients', { namespace }) getClients;
-    @Getter('clientFullName', { namespace }) getClientFullName;
+    @State('clients', { namespace }) clients!: Array<Client>;
+    @Action('getClients', { namespace }) getClients!: () => void;
+    @Getter('clientFullName', { namespace }) getClientFullName!: () => void;
 
     async created() {
         try {
@@ -29,6 +29,6 @@ export default class Programs extends Vue {
     }
 
     pushAddProgramRoute() {
-        this.$router.push({name: 'add-program'})
+        this.$router.push({ name: 'add-program' });
     }
 }

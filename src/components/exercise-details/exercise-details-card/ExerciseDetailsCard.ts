@@ -4,7 +4,7 @@ import { Exercise } from '@/types/types';
 
 @Component
 export default class ExerciseDetailsCard extends Vue {
-    @Prop() exercise: Exercise | undefined;
+    @Prop() exercise!: Exercise;
 
     muscles = [
         'Shoulders',

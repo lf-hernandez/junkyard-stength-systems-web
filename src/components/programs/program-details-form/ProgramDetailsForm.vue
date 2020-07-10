@@ -12,8 +12,10 @@
                 />
             </div>
 
-             <div class="form-group row">
-                <label for="programDuration" class="col-sm-2 col-form-label">Assign to client (optional)</label>
+            <div class="form-group row">
+                <label for="programDuration" class="col-sm-2 col-form-label"
+                    >Assign to client (optional)</label
+                >
                 <div class="col-sm-10">
                     <select class="custom-select" id="inputGroupSelect01">
                         <option selected>Choose Client</option>
@@ -24,7 +26,9 @@
                 </div>
             </div>
             <div class="form-group row">
-                <label for="programDuration" class="col-sm-2 col-form-label">Weeks</label>
+                <label for="programDuration" class="col-sm-2 col-form-label"
+                    >Weeks</label
+                >
                 <div class="col-sm-10">
                     <input
                         type="text"
@@ -34,8 +38,10 @@
                     />
                 </div>
             </div>
-             <div class="form-group row">
-                <label for="sessionFrequency" class="col-sm-2 col-form-label">Sessions per week</label>
+            <div class="form-group row">
+                <label for="sessionFrequency" class="col-sm-2 col-form-label"
+                    >Sessions per week</label
+                >
                 <div class="col-sm-10">
                     <input
                         type="text"
@@ -45,8 +51,14 @@
                     />
                 </div>
             </div>
-            
-            <button class="btn btn-block btn-primary mt-5 mb-4" type="button" @click="pushProgramDesignRoute">Proceed to program design</button>
+
+            <button
+                class="btn btn-block btn-primary mt-5 mb-4"
+                type="button"
+                @click="pushProgramDesignRoute"
+            >
+                Proceed to program design
+            </button>
         </form>
     </div>
 </template>

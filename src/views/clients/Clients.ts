@@ -14,8 +14,8 @@ const namespace = 'clients';
     }
 })
 export default class Clients extends Vue {
-    @State('clients', { namespace }) clients: Array<Client> | undefined;
-    @Action('getClients', { namespace }) getClients;
+    @State('clients', { namespace }) clients!: Array<Client>;
+    @Action('getClients', { namespace }) getClients!: () => void;
 
     async created() {
         if (this.clients.length === 0) {

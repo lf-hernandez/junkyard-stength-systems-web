@@ -14,8 +14,8 @@ const namespace = 'clients';
     }
 })
 export default class ProgramsGrid extends Vue {
-    @Prop() clients: Array<Client> | undefined;
-    @Getter('clientFullName', { namespace }) getClientFullName;
+    @Prop() clients!: Array<Client>;
+    @Getter('clientFullName', { namespace }) getClientFullName!: () => string;
 
     pushProgramDetailsRoute(id: string) {
         this.$router.push({

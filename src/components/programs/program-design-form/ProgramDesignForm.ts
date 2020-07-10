@@ -12,16 +12,15 @@ const namespace = 'exercises';
     }
 })
 export default class ProgramDesignForm extends Vue {
-    @State('exercises', { namespace }) exercises: Array<Exercise> | undefined;
-    @Action('getExercises', { namespace }) getExercises;
+    @State('exercises', { namespace }) exercises!: Array<Exercise>;
+    @Action('getExercises', { namespace }) getExercises!: () => void;
 
     exerciseBag: Array<Exercise> = [];
     selectedExercise: string | Exercise = '';
 
-
     async created() {
         try {
-            if(this.exercises.length < 1) {
+            if (this.exercises.length < 1) {
                 await this.getExercises();
             }
         } catch (e) {
@@ -30,10 +29,9 @@ export default class ProgramDesignForm extends Vue {
     }
 
     addExercise(exercise: Exercise) {
-        if(exercise) {
+        if (exercise) {
             this.exerciseBag.push(exercise);
             this.selectedExercise = '';
         }
     }
-
 }

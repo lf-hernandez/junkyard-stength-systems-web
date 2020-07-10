@@ -15,15 +15,15 @@ const namespace = 'clients';
     }
 })
 export default class ClientDetails extends Vue {
-    @Prop() clientId: string | undefined;
-    @Prop({ default: false }) isNewClient: boolean | undefined;
-    @State('clients', { namespace }) clients: Array<Client> | undefined;
-    @Action('getClients', { namespace }) getClients;
-    @Action('addClient', { namespace }) addClient;
-    @Action('deleteClient', { namespace }) deleteClientAction;
-    @Getter('clientById', { namespace }) getClientById;
+    @Prop() clientId!: string;
+    @Prop({ default: false }) isNewClient!: boolean;
+    @State('clients', { namespace }) clients!: Array<Client>;
+    @Action('getClients', { namespace }) getClients!: () => void;
+    @Action('addClient', { namespace }) addClient!: (client: Client) => void;
+    @Action('deleteClient', { namespace }) deleteClientAction!: (client: Client) => void;
+    @Getter('clientById', { namespace }) getClientById!: (id: string) => Client;
 
-    client: Client | null = null;
+    client!: Client;
 
     async created() {
         if (this.isNewClient) {

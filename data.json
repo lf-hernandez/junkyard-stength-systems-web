@@ -1,132 +1,108 @@
 {
-  "clients": [
-    {
-      "id": "0",
-      "firstName": "Simon",
-      "lastName": "Bolivar",
-      "weekNumber": "7",
-      "email": "test@gmail.com",
-      "lastCheckIn": "06/01/2020",
-      "phone": "(555) 555-5555"
-    },
-    {
-      "id": "1",
-      "firstName": "Selina",
-      "lastName": "Kyle",
-      "weekNumber": "3",
-      "lastCheckIn": "06/01/2020",
-      "phone": "(555) 555-5555"
-    },
-    {
-      "id": "2",
-      "firstName": "Thor",
-      "lastName": "Odinson",
-      "weekNumber": "10",
-      "email": "test@gmail.com",
-      "lastCheckIn": "06/01/2020",
-      "phone": "(555) 555-5555"
-    },
-    {
-      "id": "3",
-      "firstName": "Lebron",
-      "lastName": "James",
-      "weekNumber": "2",
-      "email": "test@gmail.com",
-      "lastCheckIn": "06/01/2020",
-      "phone": "(555) 555-5555"
-    },
-    {
-      "id": "4",
-      "firstName": "James",
-      "lastName": "Howlett",
-      "weekNumber": "17",
-      "email": "test@gmail.com",
-      "lastCheckIn": "06/01/2020",
-      "phone": "(555) 555-5555"
-    },
-    {
-      "id": "5",
-      "firstName": "Wade",
-      "lastName": "Wilson",
-      "weekNumber": "32",
-      "email": "test@gmail.com",
-      "lastCheckIn": "06/01/2020",
-      "phone": "(555) 555-5555"
-    }
-  ],
-  "exercises": [
-    {
-      "id": "0",
-      "name": "Overhead Press",
-      "description": "Description goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "movementType": "Main",
-      "muscles": [
-        "Shoulders",
-        "Chest",
-        "Triceps"
-      ]
-    },
-    {
-      "id": "1",
-      "name": "Bench Press",
-      "description": "Description goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "movementType": "Main",
-      "muscles": [
-        "Shoulders",
-        "Chest",
-        "Triceps"
-      ]
-    },
-    {
-      "id": "2",
-      "name": "Squat",
-      "description": "Description goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "movementType": "Main",
-      "muscles": [
-        "Quads",
-        "Glutes",
-        "Hamstrings"
-      ]
-    },
-    {
-      "id": "3",
-      "name": "Front Squat",
-      "description": "Description goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "movementType": "Assistance",
-      "muscles": [
-        "Quads",
-        "Glutes",
-        "Hamstrings"
-      ]
-    },
-    {
-      "id": "4",
-      "name": "Hamstring Curl",
-      "description": "Description goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "movementType": "Accessory",
-      "muscles": [
-        "Hamstrings"
-      ]
-    },
-    {
-      "id": "5",
-      "name": "French Press",
-      "description": "Description goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "movementType": "Accessory",
-      "muscles": [
-        "Triceps"
-      ]
-    },
-    {
-      "id": "6",
-      "name": "Deadlift",
-      "description": "Description goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "movementType": "Main",
-      "muscles": [
-        "Back",
-        "Traps",
-        "Hamstrings"
-      ]
-    }
-  ]
+    "clients": [
+        {
+            "id": "0",
+            "firstName": "Simon",
+            "lastName": "Bolivar",
+            "weekNumber": "7",
+            "email": "test@gmail.com",
+            "lastCheckIn": "06/01/2020",
+            "phone": "(555) 555-5555"
+        },
+        {
+            "id": "1",
+            "firstName": "Selina",
+            "lastName": "Kyle",
+            "weekNumber": "3",
+            "lastCheckIn": "06/01/2020",
+            "phone": "(555) 555-5555"
+        },
+        {
+            "id": "2",
+            "firstName": "Thor",
+            "lastName": "Odinson",
+            "weekNumber": "10",
+            "email": "test@gmail.com",
+            "lastCheckIn": "06/01/2020",
+            "phone": "(555) 555-5555"
+        },
+        {
+            "id": "3",
+            "firstName": "Lebron",
+            "lastName": "James",
+            "weekNumber": "2",
+            "email": "test@gmail.com",
+            "lastCheckIn": "06/01/2020",
+            "phone": "(555) 555-5555"
+        },
+        {
+            "id": "4",
+            "firstName": "James",
+            "lastName": "Howlett",
+            "weekNumber": "17",
+            "email": "test@gmail.com",
+            "lastCheckIn": "06/01/2020",
+            "phone": "(555) 555-5555"
+        },
+        {
+            "id": "5",
+            "firstName": "Wade",
+            "lastName": "Wilson",
+            "weekNumber": "32",
+            "email": "test@gmail.com",
+            "lastCheckIn": "06/01/2020",
+            "phone": "(555) 555-5555"
+        }
+    ],
+    "exercises": [
+        {
+            "id": "0",
+            "name": "Overhead Press",
+            "description": "Description goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "movementType": "Main",
+            "muscles": ["Shoulders", "Chest", "Triceps"]
+        },
+        {
+            "id": "1",
+            "name": "Bench Press",
+            "description": "Description goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "movementType": "Main",
+            "muscles": ["Shoulders", "Chest", "Triceps"]
+        },
+        {
+            "id": "2",
+            "name": "Squat",
+            "description": "Description goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "movementType": "Main",
+            "muscles": ["Quads", "Glutes", "Hamstrings"]
+        },
+        {
+            "id": "3",
+            "name": "Front Squat",
+            "description": "Description goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "movementType": "Assistance",
+            "muscles": ["Quads", "Glutes", "Hamstrings"]
+        },
+        {
+            "id": "4",
+            "name": "Hamstring Curl",
+            "description": "Description goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "movementType": "Accessory",
+            "muscles": ["Hamstrings"]
+        },
+        {
+            "id": "5",
+            "name": "French Press",
+            "description": "Description goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "movementType": "Accessory",
+            "muscles": ["Triceps"]
+        },
+        {
+            "id": "6",
+            "name": "Deadlift",
+            "description": "Description goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "movementType": "Main",
+            "muscles": ["Back", "Traps", "Hamstrings"]
+        }
+    ]
 }

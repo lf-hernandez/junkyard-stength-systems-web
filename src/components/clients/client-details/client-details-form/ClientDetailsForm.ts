@@ -8,13 +8,13 @@ const namespace = 'clients';
 
 @Component
 export default class ClientDetailsForm extends Vue {
-    @Prop() client: Client | undefined;
-    @Prop({ default: false }) isNewClient: boolean | undefined;
-    @State('clients', { namespace }) clients: Array<Client> | undefined;
-    @Action('getClients', { namespace }) getClients: undefined;
-    @Action('addClient', { namespace }) addClientAction;
-    @Action('updateClient', { namespace }) updateClientAction;
-    @Getter('clientById', { namespace }) getClientById;
+    @Prop() client!: Client;
+    @Prop({ default: false }) isNewClient!: boolean;
+    @State('clients', { namespace }) clients!: Array<Client>;
+    @Action('getClients', { namespace }) getClients!: () => void;
+    @Action('addClient', { namespace }) addClientAction!: (client: Client) => void;
+    @Action('updateClient', { namespace }) updateClientAction!: (client: Client) => void;
+    @Getter('clientById', { namespace }) getClientById!: (id: string) => Client;
 
     async updateClient() {
         await this.updateClientAction(this.client);

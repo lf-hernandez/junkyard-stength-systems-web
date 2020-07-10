@@ -14,40 +14,31 @@ const routes: Array<RouteConfig> = [
     {
         path: '/sign-in',
         name: 'sign-in',
-        component: () =>
-            import(/* webpackChunkName: "auth" */ '../views/sign-in/SignIn.vue')
+        component: () => import(/* webpackChunkName: "auth" */ '../views/sign-in/SignIn.vue')
     },
     {
         path: '/sign-up',
         name: 'sign-up',
-        component: () =>
-            import(/* webpackChunkName: "auth" */ '../views/sign-up/SignUp.vue')
+        component: () => import(/* webpackChunkName: "auth" */ '../views/sign-up/SignUp.vue')
     },
     {
         path: '/clients',
         name: 'clients',
-        component: () =>
-            import(
-                /* webpackChunkName: "clients" */ '../views/clients/Clients.vue'
-            )
+        component: () => import(/* webpackChunkName: "clients" */ '../views/clients/Clients.vue')
     },
     {
         path: '/clients/:clientId/client-details',
         name: 'client-details.view',
         props: true,
         component: () =>
-            import(
-                /* webpackChunkName: "clients" */ '../views/client-details/ClientDetails.vue'
-            )
+            import(/* webpackChunkName: "clients" */ '../views/client-details/ClientDetails.vue')
     },
     {
         path: '/clients/new-client/client-details',
         name: 'client-details.add',
         props: { isNewClient: true },
         component: () =>
-            import(
-                /* webpackChunkName: "clients" */ '../views/client-details/ClientDetails.vue'
-            )
+            import(/* webpackChunkName: "clients" */ '../views/client-details/ClientDetails.vue')
     },
     {
         path: '/clients/:clientId/client-details/edit',
@@ -107,37 +98,32 @@ const routes: Array<RouteConfig> = [
     {
         path: '/programs',
         name: 'programs',
-        component: () =>
-            import(
-                /* webpackChunkName: "programs" */ '../views/programs/Programs.vue'
-            )
+        component: () => import(/* webpackChunkName: "programs" */ '../views/programs/Programs.vue')
     },
     {
         path: '/add-program',
         name: 'add-program',
         redirect: 'add-program/program-details',
         component: () =>
-            import(
-                /* webpackChunkName: "programs" */ '../views/add-program/AddProgram.vue'
-            ),
-            children: [
-                {
-                    path: '/add-program/program-details',
-                    name: 'add-program.program-details',
-                    component: () =>
-                        import(
-                            /* webpackChunkName: "programs" */ '../components/programs/program-details-form/ProgramDetailsForm.vue'
-                        )
-                },
-                {
-                    path: '/add-program/program-design',
-                    name: 'add-program.program-design',
-                    component: () =>
-                        import(
-                            /* webpackChunkName: "programs" */ '../components/programs/program-design-form/ProgramDesignForm.vue'
-                        )
-                },
-            ]
+            import(/* webpackChunkName: "programs" */ '../views/add-program/AddProgram.vue'),
+        children: [
+            {
+                path: '/add-program/program-details',
+                name: 'add-program.program-details',
+                component: () =>
+                    import(
+                        /* webpackChunkName: "programs" */ '../components/programs/program-details-form/ProgramDetailsForm.vue'
+                    )
+            },
+            {
+                path: '/add-program/program-design',
+                name: 'add-program.program-design',
+                component: () =>
+                    import(
+                        /* webpackChunkName: "programs" */ '../components/programs/program-design-form/ProgramDesignForm.vue'
+                    )
+            }
+        ]
     }
 ];
 

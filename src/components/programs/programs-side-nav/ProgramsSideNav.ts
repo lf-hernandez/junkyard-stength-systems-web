@@ -8,8 +8,8 @@ const namespace = 'clients';
 
 @Component
 export default class ProgramsSideNav extends Vue {
-    @Prop() clients: Array<Client> | undefined;
-    @Getter('clientFullName', { namespace }) getClientFullName;
+    @Prop() clients!: Array<Client>;
+    @Getter('clientFullName', { namespace }) getClientFullName!: (id: string) => string | boolean;
 
     templates = ['Strength', 'Hypertrophy', 'Combat Sport Conditioning'];
 

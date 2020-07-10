@@ -9,16 +9,12 @@ export const mutations: MutationTree<ClientsState> = {
         state.clients.push(newClient);
     },
     updateClient(state, updatedClient: Client) {
-        const index = state.clients.findIndex(
-            client => client.id === updatedClient.id
-        );
+        const index = state.clients.findIndex((client) => client.id === updatedClient.id);
 
         state.clients.splice(index, 1, updatedClient);
         state.clients = [...state.clients];
     },
     deleteClient(state, deletedClient: Client) {
-        state.clients = [
-            ...state.clients.filter(client => client.id !== deletedClient.id)
-        ];
+        state.clients = [...state.clients.filter((client) => client.id !== deletedClient.id)];
     }
 };
