@@ -7,19 +7,62 @@ export default class ExerciseDetailsCard extends Vue {
     @Prop() exercise!: Exercise;
 
     muscles = [
-        'Shoulders',
-        'Chest',
-        'Triceps',
-        'Biceps',
-        'Back',
-        'Glutes',
-        'Adductors',
-        'Calves',
-        'QL',
-        'Hamstrings',
-        'Quads',
-        'Abs',
-        'SITS'
+        {
+            value: 'chest',
+            name: 'Chest'
+        },
+        {
+            value: 'traps',
+            name: 'Traps'
+        },
+        {
+            value: 'shoulders',
+            name: 'Shoulders'
+        },
+        {
+            value: 'triceps',
+            name: 'Triceps'
+        },
+        {
+            value: 'biceps',
+            name: 'Biceps'
+        },
+        {
+            value: 'back',
+            name: 'Back'
+        },
+        {
+            value: 'glutes',
+            name: 'Glutes'
+        },
+        {
+            value: 'adductors',
+            name: 'Adductors'
+        },
+        {
+            value: 'calves',
+            name: 'Calves'
+        },
+        {
+            value: 'ql',
+            name: 'QL'
+        },
+        {
+            value: 'hamstrings',
+            name: 'Hamstrings'
+        },
+        {
+            value: 'quads',
+            name: 'Quads'
+        },
+        {
+            value: 'abs',
+            name: 'Abs'
+        },
+        {
+            value: 'sits',
+            name: 'SITS'
+        }
     ];
 
     isActive(muscle: string, muscles: Array<string>) {

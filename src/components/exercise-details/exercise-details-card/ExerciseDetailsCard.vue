@@ -8,13 +8,10 @@
 
                         <hr />
                         {{ exercise.description }}
+
                         <hr />
 
-                        <div class="my-2">
-                            <h5>Movement Type:</h5>
-                            <span class="badge badge-warning">{{ exercise.movementType }}</span>
-                        </div>
-
+                        <h5>Link</h5>
                         <template v-if="isEmbeddedVideo">
                             <iframe
                                 width="560"
@@ -31,17 +28,24 @@
 
                         <hr />
 
+                        <div class="my-2">
+                            <h5>Movement Type:</h5>
+                            <span class="badge badge-warning">{{ exercise.movementType }}</span>
+                        </div>
+
+                        <hr />
+
                         <h5 class="card-title">Muscle Groups</h5>
 
                         <div class="d-flex">
-                            <div class="mr-2" v-for="muscle in muscles" :key="muscle">
+                            <div class="mr-2" v-for="muscle in muscles" :key="muscle.value">
                                 <span
                                     class="badge badge-pill"
                                     :class="{
-                                        'badge-success': isActive(muscle, exercise.muscles),
-                                        'badge-secondary': !isActive(muscle, exercise.muscles)
+                                        'badge-success': isActive(muscle.value, exercise.muscles),
+                                        'badge-secondary': !isActive(muscle.value, exercise.muscles)
                                     }"
-                                    >{{ muscle }}</span
+                                    >{{ muscle.name }}</span
                                 >
                             </div>
                         </div>

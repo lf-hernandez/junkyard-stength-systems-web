@@ -24,60 +24,60 @@ export default class ExerciseDetailsForm extends Vue {
 
     options: Array<object> = [
         {
-            value: 'Chest',
-            name: 'chest'
+            value: 'chest',
+            name: 'Chest'
         },
         {
-            value: 'Traps',
-            name: 'traps'
+            value: 'traps',
+            name: 'Traps'
         },
         {
-            value: 'Shoulders',
-            name: 'shoulders'
+            value: 'shoulders',
+            name: 'Shoulders'
         },
         {
-            value: 'Triceps',
-            name: 'triceps'
+            value: 'triceps',
+            name: 'Triceps'
         },
         {
-            value: 'Biceps',
-            name: 'biceps'
+            value: 'biceps',
+            name: 'Biceps'
         },
         {
-            value: 'Back',
-            name: 'back'
+            value: 'back',
+            name: 'Back'
         },
         {
-            value: 'Glutes',
-            name: 'glutes'
+            value: 'glutes',
+            name: 'Glutes'
         },
         {
-            value: 'Adductors',
-            name: 'adductors'
+            value: 'adductors',
+            name: 'Adductors'
         },
         {
-            value: 'Calves',
-            name: 'calves'
+            value: 'calves',
+            name: 'Calves'
         },
         {
-            value: 'QL',
-            name: 'ql'
+            value: 'ql',
+            name: 'QL'
         },
         {
-            value: 'Hamstrings',
-            name: 'hamstrings'
+            value: 'hamstrings',
+            name: 'Hamstrings'
         },
         {
-            value: 'Quads',
-            name: 'quads'
+            value: 'quads',
+            name: 'Quads'
         },
         {
-            value: 'Abs',
-            name: 'abs'
+            value: 'abs',
+            name: 'Abs'
         },
         {
-            value: 'SITS',
-            name: 'sits'
+            value: 'sits',
+            name: 'SITS'
         }
     ];
 

@@ -26,6 +26,18 @@
                     </div>
 
                     <div class="form-group">
+                        <label for="exercise-link">Link</label>
+                        <input
+                            type="text"
+                            class="form-control"
+                            name="exercise-link"
+                            id="exercise-link"
+                            aria-describedby="exercise-link"
+                            v-model="exercise.link"
+                        />
+                    </div>
+
+                    <div class="form-group">
                         <label for="inputState">Movement Type</label>
                         <select
                             id="inputState"
@@ -39,18 +51,6 @@
                                 >{{ movementType.text }}
                             </option>
                         </select>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="exercise-link">Link</label>
-                        <input
-                            type="text"
-                            class="form-control"
-                            name="exercise-link"
-                            id="exercise-link"
-                            aria-describedby="exercise-link"
-                            v-model="exercise.link"
-                        />
                     </div>
 
                     <hr class="my-4" />
@@ -72,9 +72,7 @@
                                     :value="option.value"
                                     v-model="exercise.muscles"
                                 />
-                                <label class="form-check-label" :for="option.name">{{
-                                    option.value
-                                }}</label>
+                                <label class="form-check-label" :for="option.name">{{option.value}}</label>
                             </div>
                         </div>
                     </div>

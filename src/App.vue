@@ -44,6 +44,7 @@ body {
 
 main {
     padding-top: 4rem;
+    padding-bottom: 4rem;
     min-height: 100vh;
 }
 
