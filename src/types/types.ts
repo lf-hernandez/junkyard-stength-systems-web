@@ -3,6 +3,7 @@ export interface Exercise {
     name: string;
     description: string;
     movementType: string;
+    link: string;
     muscles: Array<string>;
 }
 

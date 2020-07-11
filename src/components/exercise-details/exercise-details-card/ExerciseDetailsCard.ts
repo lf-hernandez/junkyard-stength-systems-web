@@ -26,6 +26,10 @@ export default class ExerciseDetailsCard extends Vue {
         return muscles.includes(muscle);
     }
 
+    isEmbeddedVideo() {
+        return this.exercise.link.includes('youtube' || 'youtu.be' || 'vimeo' || 'drive');
+    }
+
     onEdit() {
         const normalizedSlug = this.exercise.name
             .split(' ')

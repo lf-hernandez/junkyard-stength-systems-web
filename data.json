@@ -60,49 +60,80 @@
             "name": "Overhead Press",
             "description": "Description goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
             "movementType": "Main",
-            "muscles": ["shoulders", "chest", "triceps"]
+            "link": "https://youtu.be/bN1YwwqPnnM",
+            "muscles": [
+                "shoulders",
+                "chest",
+                "triceps"
+            ]
         },
         {
             "id": "1",
             "name": "Bench Press",
             "description": "Description goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
             "movementType": "Main",
-            "muscles": ["shoulders", "chest", "triceps"]
+            "link": "https://youtu.be/wzq57DB5Ppg",
+            "muscles": [
+                "shoulders",
+                "chest",
+                "triceps"
+            ]
         },
         {
             "id": "2",
             "name": "Squat",
             "description": "Description goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
             "movementType": "Main",
-            "muscles": ["quads", "glutes", "hamstrings"]
+            "link": "https://youtu.be/Uv_DKDl7EjA",
+            "muscles": [
+                "quads",
+                "glutes",
+                "hamstrings"
+            ]
         },
         {
             "id": "3",
             "name": "Front Squat",
             "description": "Description goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
             "movementType": "Assistance",
-            "muscles": ["quads", "glutes", "hamstrings"]
+            "link": "https://youtu.be/Cnc0qKLAgcU",
+            "muscles": [
+                "quads",
+                "glutes",
+                "hamstrings"
+            ]
         },
         {
             "id": "4",
             "name": "Hamstring Curl",
             "description": "Description goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
             "movementType": "Accessory",
-            "muscles": ["hamstrings"]
+            "link": "https://www.youtube.com/watch?v=1Tq3QdYUuHs",
+            "muscles": [
+                "hamstrings"
+            ]
         },
         {
             "id": "5",
             "name": "French Press",
             "description": "Description goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
             "movementType": "Accessory",
-            "muscles": ["triceps"]
+            "link": "https://www.youtube.com/watch?v=CaDPGzJaNm8",
+            "muscles": [
+                "triceps"
+            ]
         },
         {
             "id": "6",
             "name": "Deadlift",
             "description": "Description goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
             "movementType": "Main",
-            "muscles": ["back", "traps", "hamstrings"]
+            "link": "https://www.youtube.com/watch?v=VL5Ab0T07e4",
+            "muscles": [
+                "back",
+                "traps",
+                "hamstrings"
+            ]
         }
     ]
 }

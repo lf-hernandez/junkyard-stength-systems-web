@@ -41,6 +41,17 @@
                         </select>
                     </div>
 
+                    <div class="form-group">
+                        <label for="exercise-link">Link</label>
+                        <input
+                            type="text"
+                            class="form-control"
+                            name="exercise-link"
+                            id="exercise-link"
+                            aria-describedby="exercise-link"
+                        />
+                    </div>
+
                     <hr class="my-4" />
 
                     <div class="form-group">
@@ -60,11 +71,9 @@
                                     :value="option.value"
                                     v-model="exercise.muscles"
                                 />
-                                <label
-                                    class="form-check-label"
-                                    :for="option.name"
-                                    >{{ option.value }}</label
-                                >
+                                <label class="form-check-label" :for="option.name">{{
+                                    option.value
+                                }}</label>
                             </div>
                         </div>
                     </div>
@@ -73,22 +82,14 @@
 
             <div class="row mt-5">
                 <div class="col">
-                    <button
-                        type="button"
-                        class="btn btn-block btn-secondary"
-                        @click="onCancel"
-                    >
-                        <font-awesome-icon
-                            :icon="['fas', 'times-circle']"
-                        ></font-awesome-icon>
+                    <button type="button" class="btn btn-block btn-secondary" @click="onCancel">
+                        <font-awesome-icon :icon="['fas', 'times-circle']"></font-awesome-icon>
                         Cancel
                     </button>
                 </div>
                 <div class="col">
                     <button type="submit" class="btn btn-block btn-primary">
-                        <font-awesome-icon
-                            :icon="['fas', 'save']"
-                        ></font-awesome-icon>
+                        <font-awesome-icon :icon="['fas', 'save']"></font-awesome-icon>
                         Save
                     </button>
                 </div>
