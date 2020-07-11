@@ -49,6 +49,7 @@
                             name="exercise-link"
                             id="exercise-link"
                             aria-describedby="exercise-link"
+                            v-model="exercise.link"
                         />
                     </div>
 
