@@ -9,8 +9,7 @@
             </li>
             <li>Donec et neque ut elit rutrum dapibus.</li>
             <li>
-                Nam molestie ipsum vitae tortor suscipit, id hendrerit nisl
-                imperdiet.
+                Nam molestie ipsum vitae tortor suscipit, id hendrerit nisl imperdiet.
             </li>
             <li>
                 In rhoncus eros sit amet dolor dictum finibus eget non orci.

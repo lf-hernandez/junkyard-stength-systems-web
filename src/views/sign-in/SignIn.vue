@@ -7,9 +7,7 @@
                 <hr class="my-4" />
                 <p>
                     New to JSS?
-                    <router-link :to="{ name: 'sign-up' }"
-                        >Create an account.</router-link
-                    >
+                    <router-link :to="{ name: 'sign-up' }">Create an account.</router-link>
                 </p>
             </div>
         </div>

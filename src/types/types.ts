@@ -17,6 +17,31 @@ export interface Client {
     lastCheckIn: Date;
 }
 
+export interface Program {
+    id: string;
+    name: string;
+    client: Client;
+    weeks: number;
+    frequency: number;
+    sessions: Array<Session>;
+}
+
+export interface Session {
+    id: string;
+    name: string;
+    exercisesPrescriptions: Array<ExercisePrescription>;
+}
+
+export interface ExercisePrescription {
+    id: string;
+    exercise: Exercise;
+    sets: number;
+    reps: number;
+    time: string;
+    distance: string;
+    restPeriod: string;
+}
+
 export interface RootState {
     isLoaded: boolean;
 }
@@ -27,4 +52,8 @@ export interface ClientsState {
 
 export interface ExercisesState {
     exercises: Array<Exercise>;
+}
+
+export interface ProgramsState {
+    programs: Array<Program>;
 }

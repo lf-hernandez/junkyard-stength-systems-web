@@ -10,9 +10,7 @@
                 />
                 <div class="input-group-append">
                     <button class="btn btn-outline-secondary" type="button">
-                        <font-awesome-icon
-                            :icon="['fas', 'plus']"
-                        ></font-awesome-icon>
+                        <font-awesome-icon :icon="['fas', 'plus']"></font-awesome-icon>
                     </button>
                 </div>
             </div>
@@ -30,11 +28,7 @@
                 <div class="input-group-prepend">
                     <select v-model="selectedExercise">
                         <option disabled value="">Choose exercise</option>
-                        <option
-                            v-for="exercise in exercises"
-                            :key="exercise.id"
-                            :value="exercise"
-                        >
+                        <option v-for="exercise in exercises" :key="exercise.id" :value="exercise">
                             {{ exercise.name }}
                         </option>
                     </select>
@@ -45,9 +39,7 @@
                         type="button"
                         @click="addExercise(selectedExercise)"
                     >
-                        <font-awesome-icon
-                            :icon="['fas', 'plus']"
-                        ></font-awesome-icon>
+                        <font-awesome-icon :icon="['fas', 'plus']"></font-awesome-icon>
                     </button>
                 </div>
             </div>

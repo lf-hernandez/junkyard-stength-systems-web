@@ -30,7 +30,9 @@
 
             <div class="flex-column flex-grow">
                 <template v-if="category">
-                    <ExerciseLibraryGrid :exercises="exercisesByCategory(category)"></ExerciseLibraryGrid>
+                    <ExerciseLibraryGrid
+                        :exercises="exercisesByCategory(category)"
+                    ></ExerciseLibraryGrid>
                 </template>
                 <template v-else>
                     <ExerciseLibraryGrid :exercises="exercises"></ExerciseLibraryGrid>

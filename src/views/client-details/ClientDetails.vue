@@ -16,13 +16,8 @@
             </div>
             <div>
                 <template v-if="isDetailsView">
-                    <button
-                        class="btn btn-secondary btn-lg"
-                        @click="returnToClientList"
-                    >
-                        <font-awesome-icon
-                            icon="arrow-left"
-                        ></font-awesome-icon>
+                    <button class="btn btn-secondary btn-lg" @click="returnToClientList">
+                        <font-awesome-icon icon="arrow-left"></font-awesome-icon>
                         Back
                     </button>
                 </template>
@@ -54,24 +49,14 @@
 
                     <div class="row mt-4">
                         <div class="col-12 col-sm-6">
-                            <button
-                                class="btn btn-block btn-danger mr-3"
-                                @click="deleteClient"
-                            >
-                                <font-awesome-icon
-                                    :icon="['fas', 'id-card']"
-                                ></font-awesome-icon>
+                            <button class="btn btn-block btn-danger mr-3" @click="deleteClient">
+                                <font-awesome-icon :icon="['fas', 'id-card']"></font-awesome-icon>
                                 Delete
                             </button>
                         </div>
                         <div class="col-12 col-sm-6">
-                            <button
-                                class="btn btn-block btn-primary"
-                                @click="pushEditRoute"
-                            >
-                                <font-awesome-icon
-                                    :icon="['fas', 'edit']"
-                                ></font-awesome-icon>
+                            <button class="btn btn-block btn-primary" @click="pushEditRoute">
+                                <font-awesome-icon :icon="['fas', 'edit']"></font-awesome-icon>
                                 Edit
                             </button>
                         </div>

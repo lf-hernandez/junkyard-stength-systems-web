@@ -55,14 +55,15 @@ const routes: Array<RouteConfig> = [
         component: () =>
             import(
                 /* webpackChunkName: "exercise-library" */ '../views/exercise-library/ExerciseLibrary.vue'
-            ),
-    }, {
+            )
+    },
+    {
         path: '/exercise-library/:category',
         name: 'exercise-library.category',
         props: true,
         component: () =>
             import(
-                        /* webpackChunkName: "exercise-library" */ '../views/exercise-library/ExerciseLibrary.vue'
+                /* webpackChunkName: "exercise-library" */ '../views/exercise-library/ExerciseLibrary.vue'
             )
     },
     {

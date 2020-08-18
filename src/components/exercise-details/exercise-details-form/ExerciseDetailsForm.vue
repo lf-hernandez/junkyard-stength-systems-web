@@ -72,7 +72,9 @@
                                     :value="option.value"
                                     v-model="exercise.muscles"
                                 />
-                                <label class="form-check-label" :for="option.name">{{option.value}}</label>
+                                <label class="form-check-label" :for="option.name">{{
+                                    option.value
+                                }}</label>
                             </div>
                         </div>
                     </div>

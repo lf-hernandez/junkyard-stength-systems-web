@@ -25,17 +25,10 @@
 
                     <div class="form-group">
                         <label for="Password">Password</label>
-                        <input
-                            type="password"
-                            class="form-control"
-                            id="password"
-                        />
+                        <input type="password" class="form-control" id="password" />
                     </div>
 
-                    <button
-                        type="submit"
-                        class="mt-5 btn btn-block btn-primary"
-                    >
+                    <button type="submit" class="mt-5 btn btn-block btn-primary">
                         Sign Up
                     </button>
                 </form>

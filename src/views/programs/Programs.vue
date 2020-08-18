@@ -13,15 +13,11 @@
                     type="button"
                     @click="pushAddProgramRoute"
                 >
-                    <font-awesome-icon
-                        :icon="['fas', 'plus']"
-                    ></font-awesome-icon>
+                    <font-awesome-icon :icon="['fas', 'plus']"></font-awesome-icon>
                     Program
                 </button>
                 <button class="btn btn-block btn-lg btn-dark mt-4">
-                    <font-awesome-icon
-                        :icon="['fas', 'plus']"
-                    ></font-awesome-icon>
+                    <font-awesome-icon :icon="['fas', 'plus']"></font-awesome-icon>
                     Template
                 </button>
             </div>

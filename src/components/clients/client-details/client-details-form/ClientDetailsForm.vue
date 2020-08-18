@@ -64,10 +64,7 @@
             </div>
             <template v-if="isNewClient">
                 <button class="btn btn-block btn-primary mt-4" type="submit">
-                    <font-awesome-icon
-                        class="mr-3"
-                        icon="user"
-                    ></font-awesome-icon>
+                    <font-awesome-icon class="mr-3" icon="user"></font-awesome-icon>
                     Add
                 </button>
             </template>
@@ -79,17 +76,13 @@
                             class="btn btn-block btn-secondary"
                             @click="cancelEdit"
                         >
-                            <font-awesome-icon
-                                :icon="['fas', 'times']"
-                            ></font-awesome-icon>
+                            <font-awesome-icon :icon="['fas', 'times']"></font-awesome-icon>
                             Cancel
                         </button>
                     </div>
                     <div class="col">
                         <button type="submit" class="btn btn-block btn-primary">
-                            <font-awesome-icon
-                                :icon="['fas', 'save']"
-                            ></font-awesome-icon>
+                            <font-awesome-icon :icon="['fas', 'save']"></font-awesome-icon>
                             Save
                         </button>
                     </div>

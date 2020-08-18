@@ -18,7 +18,9 @@ const namespace = 'exercises';
 export default class ExerciseLibrary extends Vue {
     @State('exercises', { namespace }) exercises!: Array<Exercise>;
     @Action('getExercises', { namespace }) getExercises!: () => void;
-    @Getter('exercisesByCategory', { namespace }) exercisesByCategory!: (category: string) => Array<Exercise>;
+    @Getter('exercisesByCategory', { namespace }) exercisesByCategory!: (
+        category: string
+    ) => Array<Exercise>;
 
     @Prop() category!: string;
 
@@ -27,16 +29,15 @@ export default class ExerciseLibrary extends Vue {
             if (this.exercises.length < 1) {
                 await this.getExercises();
             }
-
         } catch (e) {
             console.log(e);
         }
     }
 
-    @Watch('category') 
-    onCategoryChange(oldVal: string, newVal: string) {
-        if(this.category === 'all') {
-            this.$router.push({name: 'exercise-library'})
+    @Watch('category')
+    onCategoryChange() {
+        if (this.category === 'all') {
+            this.$router.push({ name: 'exercise-library' });
         }
     }
 

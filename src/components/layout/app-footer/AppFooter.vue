@@ -10,9 +10,7 @@
                                 class="mx-1"
                             ></font-awesome-icon>
                             Created by
-                            <a
-                                class="authorAnchor"
-                                href="https://github.com/lf-hernandez"
+                            <a class="authorAnchor" href="https://github.com/lf-hernandez"
                                 >Luis Felipe Hernandez</a
                             >
                         </p>
@@ -23,18 +21,14 @@
                             href="https://www.instagram.com/junkyard.strong/"
                             target="_blank"
                         >
-                            <font-awesome-icon
-                                :icon="['fab', 'instagram']"
-                            ></font-awesome-icon>
+                            <font-awesome-icon :icon="['fab', 'instagram']"></font-awesome-icon>
                         </a>
                         <a
                             class="brandIconAnchor"
                             href="mailto: junkyardstrengthsystems@gmail.com"
                             target="_blank"
                         >
-                            <font-awesome-icon
-                                :icon="['fas', 'envelope']"
-                            ></font-awesome-icon>
+                            <font-awesome-icon :icon="['fas', 'envelope']"></font-awesome-icon>
                         </a>
                     </div>
                     <div class="col-auto">

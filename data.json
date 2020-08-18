@@ -135,5 +135,50 @@
                 "hamstrings"
             ]
         }
+    ],
+    "programs": [
+        {
+            "id": "234",
+            "name": "12 week Hypertrophy",
+            "client":    {
+                "id": "0",
+                "firstName": "Simon",
+                "lastName": "Bolivar",
+                "weekNumber": "7",
+                "email": "test@gmail.com",
+                "lastCheckIn": "06/01/2020",
+                "phone": "(555) 555-5555"
+            },
+            "weeks": 12,
+            "frequency": 4,
+            "sessions": [
+                {
+                    "id": "1234",
+                    "name": "Dynamic Effort",
+                    "exercisePrescriptions": [
+                        {
+                            "id": "432",
+                            "exercise": {
+                                "id": "2",
+                                "name": "Squat",
+                                "description": "Description goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                                "movementType": "Main",
+                                "link": "https://youtu.be/Uv_DKDl7EjA",
+                                "muscles": [
+                                    "quads",
+                                    "glutes",
+                                    "hamstrings"
+                                ]
+                            },
+                            "sets": 8,
+                            "reps": 2,
+                            "time": null,
+                            "distance": null,
+                            "restPeriod": "<30 seconds"
+                        }
+                    ]
+                }
+            ]
+        }
     ]
 }

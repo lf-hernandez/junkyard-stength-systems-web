@@ -8,11 +8,7 @@
                 <div class="form-group col-auto m-2">
                     <select v-model="selectedRpe">
                         <option disabled value="0">Select RPE</option>
-                        <option
-                            v-for="rate in rpeRates"
-                            :key="rate.value"
-                            :value="rate.value"
-                        >
+                        <option v-for="rate in rpeRates" :key="rate.value" :value="rate.value">
                             {{ rate.text }}
                         </option>
                     </select>

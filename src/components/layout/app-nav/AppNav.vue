@@ -23,32 +23,22 @@
 
                 <div class="collapse navbar-collapse" id="navLinks">
                     <div class="navbar-nav">
-                        <router-link
-                            class="nav-item nav-link"
-                            :to="{ name: 'clients' }"
+                        <router-link class="nav-item nav-link" :to="{ name: 'clients' }"
                             >Clients</router-link
                         >
-                        <router-link
-                            class="nav-item nav-link"
-                            :to="{ name: 'exercise-library' }"
+                        <router-link class="nav-item nav-link" :to="{ name: 'exercise-library' }"
                             >Exercise Library</router-link
                         >
-                        <router-link
-                            class="nav-item nav-link"
-                            :to="{ name: 'programs' }"
+                        <router-link class="nav-item nav-link" :to="{ name: 'programs' }"
                             >Programs</router-link
                         >
                     </div>
 
                     <div class="navbar-nav ml-auto">
-                        <router-link
-                            class="nav-item nav-link"
-                            :to="{ name: 'sign-in' }"
+                        <router-link class="nav-item nav-link" :to="{ name: 'sign-in' }"
                             >Sign In</router-link
                         >
-                        <router-link
-                            class="nav-item nav-link"
-                            :to="{ name: 'sign-up' }"
+                        <router-link class="nav-item nav-link" :to="{ name: 'sign-up' }"
                             >Sign Up</router-link
                         >
                     </div>
